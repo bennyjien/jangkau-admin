@@ -71,16 +71,8 @@
 				display: block;
 			}
 
-			.pending {
-				color: $color-alert-500;
-			}
-
-			.approved {
-				color: $color-success-500;
-			}
-
 			.fail {
-				color: $color-text-lighter;
+				color: $color-text-light;
 			}
 
 			.action {

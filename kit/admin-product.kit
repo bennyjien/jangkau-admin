@@ -1,6 +1,6 @@
 <!-- @import variables -->
-<!-- $admin-toggle-items-transaction: toggled -->
-<!-- $admin-nav-transaction-extra: link is-current -->
+<!-- $admin-toggle-items-admin: toggled -->
+<!-- $admin-nav-admin-product: link is-current -->
 <!-- @import header -->
 
 			<div id="site-content" class="site-content">
@@ -9,7 +9,7 @@
 						<div class="admin-page-container">
 							<header class="admin-page-header">
 								<div class="page-breadcrumb">
-									<p class="breadcrumb"><span class="parent">Transaksi</span> /  <span class="current">Layanan Extra</span></p>
+									<p class="breadcrumb"><span class="parent">Admin Area</span> /  <span class="current">Produk Bantuan</span></p>
 								</div>
 								<div class="avatar-nav">
 									<div class="avatar-nav-link">
@@ -29,14 +29,17 @@
 							</header>
 							<div class="admin-page-content">
 								<section class="section">
-									<h1 class="page-title">Layanan Extra</h1>
+									<h1 class="page-title">Produk Bantuan</h1>
 								</section>
 								<section class="section">
 									<div class="admin-table">
 										<div class="admin-table-head">
+											<div class="admin-table-action">
+												<a href="#" class="button button-green"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-plus" /></svg> Add New</a>
+											</div>
 											<div class="admin-table-search">
 												<div class="search-bar">
-													<input type="text" class="input" placeholder="Pemilik">
+													<input type="text" class="input" placeholder="ID, Nama">
 													<button class="button button-gray">Cari</button>
 												</div>
 											</div>
@@ -45,68 +48,69 @@
 											<table class="table">
 												<thead>
 													<tr>
-														<th class="th is-sortable">Tanggal</th>
-														<th class="th is-sortable">ID</th>
-														<th class="th is-sortable">Nama Item</th>
-														<th class="th is-sortable">Pemilik</th>
-														<th class="th is-sortable">No Order</th>
-														<th class="th is-sortable is-active">Status</th>
+														<th class="th is-sortable is-active is-asc">ID</th>
+														<th class="th is-sortable">Nama</th>
+														<th class="th is-sortable">Stok</th>
+														<th class="th is-sortable">Pemohon</th>
 														<th class="th"></th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
-														<td>02/10/2018 11:16</td>
-														<td>DFG</td>
-														<td>DNS Forwarding</td>
-														<td><a href="#">teddytanker <span class="small">Dika Ramadhan Purba</span></a></td>
-														<td>EX_5BB3F1264646EC8</td>
-														<td>Pending</td>
+														<td class="strong">#PB001</td>
+														<td><a href="#">Kursi Roda</a></td>
+														<td>8</td>
+														<td>6</td>
 														<td class="action">
-															<a class="more js-toggle" href="#o5BD286D2B12D0">Action</a>
-															<div id="o5BD286D2B12D0" class="menu-popover">
+															<a class="more js-toggle" href="#pb001">Action</a>
+															<div id="pb001" class="menu-popover">
 																<ul class="menu-popover-items">
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Selesai</a>
+																		<a href="#" class="link">Edit</a>
 																	</li>
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Hapus</a>
+																		<a href="#" class="link link-delete">Hapus</a>
 																	</li>
 																</ul>
 															</div>
 														</td>
 													</tr>
 													<tr>
-														<td>02/10/2018 11:16</td>
-														<td>DFG</td>
-														<td>DNS Forwarding</td>
-														<td><a href="#">dirri <span class="small">Aldi Pratama</span></a></td>
-														<td>EX_5BB3F1264646EFF</td>
-														<td>Pending</td>
+														<td class="strong">#PB002</td>
+														<td><a href="#">Kasur</a></td>
+														<td>8</td>
+														<td>8</td>
 														<td class="action">
-															<a class="more js-toggle" href="#">Action</a>
+															<a class="more js-toggle" href="#pb002">Action</a>
+															<div id="pb002" class="menu-popover">
+																<ul class="menu-popover-items">
+																	<li class="menu-popover-item">
+																		<a href="#" class="link">Edit</a>
+																	</li>
+																	<li class="menu-popover-item">
+																		<a href="#" class="link link-delete">Hapus</a>
+																	</li>
+																</ul>
+															</div>
 														</td>
 													</tr>
 													<tr>
-														<td>24/09/2018 11:16</td>
-														<td>DFD</td>
-														<td>Domain Forwarding - Direct Forward</td>
-														<td><a href="#">dirri <span class="small">Aldi Pratama</span></a></td>
-														<td>EX_5BB3F1264646EGF</td>
-														<td>Pending</td>
+														<td class="strong">#PB003</td>
+														<td><a href="#">Tongkat Jalan</a></td>
+														<td class="alert">4</td>
+														<td>8</td>
 														<td class="action">
-															<a class="more js-toggle" href="#">Action</a>
-														</td>
-													</tr>
-													<tr>
-														<td>24/09/2018 11:16</td>
-														<td>WHO</td>
-														<td>Whois Privacy</td>
-														<td><a href="#">alloy <span class="small">Jamaris Sastra</span></a></td>
-														<td>EX_5BB3F126464789S</td>
-														<td>Pending</td>
-														<td class="action">
-															<a class="more js-toggle" href="#">Action</a>
+															<a class="more js-toggle" href="#pb003">Action</a>
+															<div id="pb003" class="menu-popover">
+																<ul class="menu-popover-items">
+																	<li class="menu-popover-item">
+																		<a href="#" class="link">Edit</a>
+																	</li>
+																	<li class="menu-popover-item">
+																		<a href="#" class="link link-delete">Hapus</a>
+																	</li>
+																</ul>
+															</div>
 														</td>
 													</tr>
 												</tbody>
@@ -115,7 +119,7 @@
 										<div class="admin-table-foot">
 											<div class="page-navigation">
 												<div class="page-navigation-record">
-													<p class="count"><span class="value">20860</span> records</p>
+													<p class="count"><span class="value">3</span> records</p>
 												</div>
 												<div class="page-navigation-list">
 													<p class="count"><span class="value">1043</span> pages</p>

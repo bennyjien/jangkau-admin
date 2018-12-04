@@ -1,6 +1,6 @@
 <!-- @import variables -->
 <!-- $admin-toggle-items-admin: toggled -->
-<!-- $admin-nav-admin-home: link is-current -->
+<!-- $admin-nav-admin-jangkau: link is-current -->
 <!-- @import header -->
 
 			<div id="site-content" class="site-content">
@@ -9,7 +9,7 @@
 						<div class="admin-page-container">
 							<header class="admin-page-header">
 								<div class="page-breadcrumb">
-									<p class="breadcrumb"><span class="parent">Admin Area</span> /  <span class="current">Admin Home</span></p>
+									<p class="breadcrumb"><span class="parent">Admin Area</span> /  <span class="current">Jangkau Center</span></p>
 								</div>
 								<div class="avatar-nav">
 									<div class="avatar-nav-link">
@@ -29,39 +29,127 @@
 							</header>
 							<div class="admin-page-content">
 								<section class="section">
-									<h1 class="page-title">Admin Home</h1>
+									<h1 class="page-title">Jangkau Center</h1>
 								</section>
 								<section class="section">
-									<div class="stat-table">
-										<div class="stat-table-body">
+									<div class="admin-table">
+										<div class="admin-table-head">
+											<div class="admin-table-action">
+												<a href="#" class="button button-green"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-plus" /></svg> Add New</a>
+											</div>
+											<div class="admin-table-search">
+												<div class="search-bar">
+													<input type="text" class="input" placeholder="ID, Nama, Lokasi">
+													<button class="button button-gray">Cari</button>
+												</div>
+											</div>
+										</div>
+										<div class="admin-table-body">
 											<table class="table">
+												<thead>
+													<tr>
+														<th class="th is-sortable is-active is-asc">ID</th>
+														<th class="th is-sortable">Nama</th>
+														<th class="th is-sortable">Lokasi</th>
+														<th class="th is-sortable">Kursi Roda</th>
+														<th class="th is-sortable">Kasur</th>
+														<th class="th is-sortable">Tongkat Jalan</th>
+														<th class="th"></th>
+													</tr>
+												</thead>
 												<tbody>
 													<tr>
-														<td><a href="#" class="link">Trouble Ticket terbuka</a></td>
-														<td class="shrink">0</td>
+														<td class="strong">#JC001</td>
+														<td><a href="#">Jangkau Help Center</a></td>
+														<td>Grogol, Jakarta Barat</td>
+														<td>6</td>
+														<td>8</td>
+														<td>5</td>
+														<td class="action">
+															<a class="more js-toggle" href="#jc001">Action</a>
+															<div id="jc001" class="menu-popover">
+																<ul class="menu-popover-items">
+																	<li class="menu-popover-item">
+																		<a href="#" class="link">Edit</a>
+																	</li>
+																	<li class="menu-popover-item">
+																		<a href="#" class="link link-delete">Hapus</a>
+																	</li>
+																</ul>
+															</div>
+														</td>
 													</tr>
 													<tr>
-														<td><a href="#" class="link">UKR menunggu validasi</a></td>
-														<td class="shrink">2</td>
+														<td class="strong">#JC002</td>
+														<td><a href="#">Abbalove Center</a></td>
+														<td>Gunung Sahari, Jakarta Pusat</td>
+														<td>4</td>
+														<td>5</td>
+														<td>2</td>
+														<td class="action">
+															<a class="more js-toggle" href="#jc002">Action</a>
+															<div id="jc002" class="menu-popover">
+																<ul class="menu-popover-items">
+																	<li class="menu-popover-item">
+																		<a href="#" class="link">Edit</a>
+																	</li>
+																	<li class="menu-popover-item">
+																		<a href="#" class="link link-delete">Hapus</a>
+																	</li>
+																</ul>
+															</div>
+														</td>
 													</tr>
 													<tr>
-														<td><a href="#" class="link">Registrasi Domain terpending belum divalidasi</a></td>
-														<td class="shrink">-342</td>
-													</tr>
-													<tr>
-														<td><a href="#" class="link">Transfer Domain terpending belum divalidasi</a></td>
-														<td class="shrink">-185</td>
-													</tr>
-													<tr>
-														<td><a href="#" class="link">Renewal Domain terpending belum divalidasi</a></td>
-														<td class="shrink">-1830</td>
-													</tr>
-													<tr>
-														<td><a href="#" class="link">Layanan extra terpending belum divalidasi</a></td>
-														<td class="shrink">-1</td>
+														<td class="strong">#JC003</td>
+														<td><a href="#">ICUBIC Center</a></td>
+														<td>Tanjung Duren, Jakarta Barat</td>
+														<td>8</td>
+														<td>4</td>
+														<td>7</td>
+														<td class="action">
+															<a class="more js-toggle" href="#jc003">Action</a>
+															<div id="jc003" class="menu-popover">
+																<ul class="menu-popover-items">
+																	<li class="menu-popover-item">
+																		<a href="#" class="link">Edit</a>
+																	</li>
+																	<li class="menu-popover-item">
+																		<a href="#" class="link link-delete">Hapus</a>
+																	</li>
+																</ul>
+															</div>
+														</td>
 													</tr>
 												</tbody>
 											</table>
+										</div>
+										<div class="admin-table-foot">
+											<div class="page-navigation">
+												<div class="page-navigation-record">
+													<p class="count"><span class="value">3</span> records</p>
+												</div>
+												<div class="page-navigation-list">
+													<p class="count"><span class="value">1043</span> pages</p>
+													<ul class="items">
+														<li class="item item-inactive">
+															<a class="link" href="#"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-chevron-double-left" /></svg></a>
+														</li>
+														<li class="item item-inactive">
+															<a class="link" href="#"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-chevron-left" /></svg></a>
+														</li>
+														<li class="item">
+															<input class="input" type="text" value="1">
+														</li>
+														<li class="item">
+															<a class="link" href="#"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-chevron-right" /></svg></a>
+														</li>
+														<li class="item">
+															<a class="link" href="#"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-chevron-double-right" /></svg></a>
+														</li>
+													</ul>
+												</div>
+											</div>
 										</div>
 									</div>
 								</section>

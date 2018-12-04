@@ -1,6 +1,6 @@
 <!-- @import variables -->
-<!-- $admin-toggle-items-member: toggled -->
-<!-- $admin-nav-member-active: link is-current -->
+<!-- $admin-toggle-items-admin: toggled -->
+<!-- $admin-nav-admin-request: link is-current -->
 <!-- @import header -->
 
 			<div id="site-content" class="site-content">
@@ -9,7 +9,7 @@
 						<div class="admin-page-container">
 							<header class="admin-page-header">
 								<div class="page-breadcrumb">
-									<p class="breadcrumb"><span class="parent">Keanggotaan</span> /  <span class="current">Daftar Anggota Aktif (UKR)</span></p>
+									<p class="breadcrumb"><span class="parent">Admin Area</span> /  <span class="current">Permohonan</span></p>
 								</div>
 								<div class="avatar-nav">
 									<div class="avatar-nav-link">
@@ -29,148 +29,149 @@
 							</header>
 							<div class="admin-page-content">
 								<section class="section">
-									<h1 class="page-title">Daftar Anggota Aktif (UKR)</h1>
+									<h1 class="page-title">Permohonan</h1>
 								</section>
 								<section class="section">
 									<div class="admin-table">
 										<div class="admin-table-head">
 											<div class="admin-table-action">
-												<a href="#" class="button button-green">Export to CSV (UKR)</a>
-												<a href="#" class="button button-green">Export to CSV (Contacts)</a>
+												<a href="#" class="button button-green"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-plus" /></svg> Add New</a>
 											</div>
 											<div class="admin-table-search">
-													<div class="search-bar">
-														<input type="text" class="input" placeholder="Login, Nama">
-														<button class="button button-gray">Cari Anggota</button>
-													</div>
+												<div class="search-bar">
+													<input type="text" class="input" placeholder="ID, Nama">
+													<button class="button button-gray">Cari</button>
 												</div>
+											</div>
 										</div>
 										<div class="admin-table-body">
 											<table class="table">
 												<thead>
 													<tr>
-														<th class="th is-sortable is-active">Tanggal</th>
-														<th class="th is-sortable">Login</th>
-														<th class="th is-sortable">Nama Lengkap</th>
-														<th class="th is-sortable">K</th>
-														<th class="th is-sortable">Usia</th>
-														<th class="th is-sortable">Telepon</th>
-														<th class="th is-sortable">UKR</th>
-														<th class="th">Co brand</th>
+														<th class="th is-sortable is-active">ID</th>
+														<th class="th is-sortable">Tanggal</th>
+														<th class="th is-sortable">Nama</th>
+														<th class="th is-sortable">Permohonan</th>
+														<th class="th is-sortable">Status</th>
 														<th class="th"></th>
 													</tr>
 												</thead>
 												<tbody>
 													<tr>
-														<td>26/10/2018 10:15</td>
-														<td>shutto</td>
-														<td>Sutomo Purwoto</td>
-														<td>L</td>
-														<td>35</td>
-														<td>+628148822031</td>
-														<td>1</td>
-														<td></td>
+														<td class="strong">#PM008</td>
+														<td>26/10/18 10:15</td>
+														<td><a href="#">Almaida Senopati</a></td>
+														<td>Kursi Roda</td>
+														<td class="alert">Menunggu verifikasi</td>
 														<td class="action">
-															<a class="more js-toggle" href="#o5BD286D2B12D0">Action</a>
-															<div id="o5BD286D2B12D0" class="menu-popover">
+															<a class="more js-toggle" href="#pm008">Action</a>
+															<div id="pm008" class="menu-popover">
 																<ul class="menu-popover-items">
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Edit</a>
+																		<a href="#" class="link">Detail</a>
 																	</li>
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Reset Password</a>
+																		<a href="#" class="link link-delete">Hapus</a>
 																	</li>
 																</ul>
 															</div>
 														</td>
 													</tr>
 													<tr>
-														<td>26/10/2018 10:15</td>
-														<td>diyar</td>
-														<td>Sai Ful</td>
-														<td>L</td>
-														<td>38</td>
-														<td>085288222121</td>
-														<td>1</td>
-														<td></td>
+														<td class="strong">#PM007</td>
+														<td>26/10/18 10:15</td>
+														<td><a href="#">Kenneth Benson</a></td>
+														<td>Kursi Roda</td>
+														<td>Proses verifikasi</td>
 														<td class="action">
-															<a class="more js-toggle" href="#o5BD286D2B12D0">Action</a>
-															<div id="o5BD286D2B12D0" class="menu-popover">
+															<a class="more js-toggle" href="#pm007">Action</a>
+															<div id="pm007" class="menu-popover">
 																<ul class="menu-popover-items">
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Edit</a>
+																		<a href="#" class="link">Detail</a>
 																	</li>
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Reset Password</a>
+																		<a href="#" class="link link-delete">Hapus</a>
+																	</li>
+																</ul>
+															</div>
+														</td>
+													</tr>
+													<tr class="fail">
+														<td class="strong">#PM006</td>
+														<td>26/10/18 10:15</td>
+														<td><a href="#">Janet Piser</a></td>
+														<td>Kursi Roda</td>
+														<td>Ditolak</td>
+														<td class="action">
+															<a class="more js-toggle" href="#pm006">Action</a>
+															<div id="pm006" class="menu-popover">
+																<ul class="menu-popover-items">
+																	<li class="menu-popover-item">
+																		<a href="#" class="link">Detail</a>
+																	</li>
+																	<li class="menu-popover-item">
+																		<a href="#" class="link link-delete">Hapus</a>
 																	</li>
 																</ul>
 															</div>
 														</td>
 													</tr>
 													<tr>
-														<td>26/10/2018 10:15</td>
-														<td>deonk90</td>
-														<td>Deatrisna Wiria</td>
-														<td>L</td>
-														<td>28</td>
-														<td>628148828839</td>
-														<td>1</td>
-														<td></td>
+														<td class="strong">#PM005</td>
+														<td>26/10/18 10:15</td>
+														<td><a href="#">Teresa Mila</a></td>
+														<td>Kasur</td>
+														<td>Mencari Sumbangan</td>
 														<td class="action">
-															<a class="more js-toggle" href="#o5BD286D2B12D0">Action</a>
-															<div id="o5BD286D2B12D0" class="menu-popover">
+															<a class="more js-toggle" href="#pm005">Action</a>
+															<div id="pm005" class="menu-popover">
 																<ul class="menu-popover-items">
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Edit</a>
+																		<a href="#" class="link">Detail</a>
 																	</li>
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Reset Password</a>
+																		<a href="#" class="link link-delete">Hapus</a>
 																	</li>
 																</ul>
 															</div>
 														</td>
 													</tr>
 													<tr>
-														<td>26/10/2018 10:15</td>
-														<td>suwarsono</td>
-														<td>Suwarsono Suwarsono</td>
-														<td>L</td>
-														<td>36</td>
-														<td>021-5372790</td>
-														<td>1</td>
-														<td></td>
+														<td class="strong">#PM004</td>
+														<td>26/10/18 10:15</td>
+														<td><a href="#">Elisa Harian</a></td>
+														<td>Tongkat Jalan</td>
+														<td class="alert">Mengirim Sumbangan</td>
 														<td class="action">
-															<a class="more js-toggle" href="#o5BD286D2B12D0">Action</a>
-															<div id="o5BD286D2B12D0" class="menu-popover">
+															<a class="more js-toggle" href="#pm004">Action</a>
+															<div id="pm004" class="menu-popover">
 																<ul class="menu-popover-items">
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Edit</a>
+																		<a href="#" class="link">Detail</a>
 																	</li>
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Reset Password</a>
+																		<a href="#" class="link link-delete">Hapus</a>
 																	</li>
 																</ul>
 															</div>
 														</td>
 													</tr>
 													<tr>
-														<td>26/10/2018 10:15</td>
-														<td>olinputra</td>
-														<td>Olin Putra Pratama</td>
-														<td>P</td>
-														<td>21</td>
-														<td>+62813482202</td>
-														<td>1</td>
-														<td></td>
+														<td class="strong">#PM003</td>
+														<td>26/10/18 10:15</td>
+														<td><a href="#">Elisah Tahunan</a></td>
+														<td>Tongkat Jalan</td>
+														<td class="success">Tersumbang</td>
 														<td class="action">
-															<a class="more js-toggle" href="#o5BD286D2B12D0">Action</a>
-															<div id="o5BD286D2B12D0" class="menu-popover">
+															<a class="more js-toggle" href="#pm003">Action</a>
+															<div id="pm003" class="menu-popover">
 																<ul class="menu-popover-items">
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Edit</a>
+																		<a href="#" class="link">Detail</a>
 																	</li>
 																	<li class="menu-popover-item">
-																		<a href="#" class="link">Reset Password</a>
+																		<a href="#" class="link link-delete">Hapus</a>
 																	</li>
 																</ul>
 															</div>
@@ -182,7 +183,7 @@
 										<div class="admin-table-foot">
 											<div class="page-navigation">
 												<div class="page-navigation-record">
-													<p class="count"><span class="value">20860</span> records</p>
+													<p class="count"><span class="value">6</span> records</p>
 												</div>
 												<div class="page-navigation-list">
 													<p class="count"><span class="value">1043</span> pages</p>
