@@ -1,0 +1,92 @@
+.table {
+
+	.th {
+		white-space: nowrap;
+
+		&.is-sortable {
+			cursor: pointer;
+
+			&:after {
+				content: "";
+				background-color: $color-text-lighter;
+				display: inline-block;
+				height: 20px;
+				mask-image: url(../images/symbols/icon-caret-down.svg);
+				mask-size: contain;
+				opacity: 0;
+				transition: all 0.2s ease-out;
+				vertical-align: bottom;
+				width: 20px;
+			}
+
+			&:hover,
+			&:focus {
+
+				&:after {
+					opacity: 1;
+				}
+			}
+		}
+
+		&.is-active {
+			color: $color-one-500;
+
+			&:after {
+				background-color: currentColor;
+				opacity: 1;
+			}
+		}
+
+		&.is-asc {
+
+			&:after {
+				mask-image: url(../images/symbols/icon-caret-up.svg);
+			}
+		}
+
+		&.is-desc {
+
+			&:after {
+				mask-image: url(../images/symbols/icon-caret-down.svg);
+			}
+		}
+	}
+
+	.center {
+		text-align: center;
+	}
+
+	.expand {
+		width: 100%;
+	}
+
+	.shrink {
+		text-align: right;
+		white-space: nowrap;
+		width: 1%;
+	}
+
+	.bar {
+		background-color: $color-alert-400;
+		display: block;
+		height: 16px;
+	}
+}
+
+.table-responsive {
+	background: linear-gradient(to right, $white 25%, rgba($white, 0)),
+				linear-gradient(to right, rgba($white, 0), $white 75%) 100% 0,
+				radial-gradient(farthest-side at 0 50%, rgba($color-800, 0.2), rgba($color-800, 0)) 0 50%,
+				radial-gradient(farthest-side at 100% 50%, rgba($color-800, 0.2), rgba($color-800, 0)) 100% 50%;
+	background-attachment: local, local, scroll, scroll;
+	background-color: $white;
+	background-repeat: no-repeat;
+	background-size: 36px 100%, 36px 100%, 12px 100%, 12px 100%;
+	border: 1px solid $color-border;
+	overflow-x: auto;
+
+	.table {
+		background-color: transparent;
+		border: none;
+	}
+}

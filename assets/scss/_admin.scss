@@ -1,0 +1,194 @@
+.admin-page-container {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+
+	@at-root {
+		.admin-page-header {
+			align-items: center;
+			box-shadow: $box-shadow-300;
+			display: flex;
+			justify-content: space-between;
+			padding: 16px 48px;
+		}
+
+		.admin-page-content {
+			flex: 1 1 0;
+			padding: 48px;
+		}
+
+		.admin-page-footer {
+			border-top: 1px solid $color-border;
+			padding: 12px 48px;
+
+			.attribution {
+				@include font-size-200;
+				color: $color-text-light;
+				text-align: right;
+			}
+
+			.link {
+				color: $color-text-light;
+				font-weight: 700;
+			}
+		}
+	}
+}
+
+.admin-sidebar {
+
+	@at-root {
+		.admin-sidebar-logo {
+			margin: 24px 24px 48px;
+		}
+
+		.admin-sidebar-nav {
+			margin: 24px 0;
+		}
+	}
+}
+
+.admin-table {
+
+	@at-root {
+		.admin-table-head {
+			align-items: center;
+			display: flex;
+			justify-content: space-between;
+			margin-bottom: 24px;
+		}
+
+		.admin-table-search {
+			flex: 0 1 50%;
+			margin-left: auto;
+		}
+
+		.admin-table-body {
+
+			.small {
+				@include font-size-200;
+				color: $color-text-light;
+				display: block;
+			}
+
+			.pending {
+				color: $color-alert-500;
+			}
+
+			.approved {
+				color: $color-success-500;
+			}
+
+			.fail {
+				color: $color-text-lighter;
+			}
+
+			.action {
+				position: relative;
+			}
+
+			.more {
+				display: block;
+				padding-right: 18px;
+				position: relative;
+				text-align: right;
+
+				&:before {
+					content: "";
+					background-color: currentColor;
+					height: 100%;
+					mask-image: url(../images/symbols/icon-chevron-down.svg);
+					mask-repeat: no-repeat;
+					mask-position: right center;
+					mask-size: contain;
+					right: 0;
+					position: absolute;
+					top: 0;
+					width: 16px;
+				}
+			}
+		}
+
+		.admin-table-foot {
+			margin-top: 24px;
+		}
+	}
+}
+
+.admin-nav {
+
+	@at-root {
+		.admin-nav-items {
+			list-style: none;
+			margin: 0;
+			padding: 0;
+
+			&.admin-nav-items-child {
+				display: none;
+			}
+		}
+
+		.admin-nav-item {
+
+			&:not(.admin-nav-item-child) {
+
+				&:not(:last-child) {
+					border-bottom: 1px solid rgba($white, 0.12);
+					margin-bottom: 12px;
+					padding-bottom: 12px;
+				}
+			}
+
+			.heading {
+				@include font-size-300;
+				color: rgba($white, 0.4);
+				cursor: pointer;
+				font-weight: 400;
+				letter-spacing: 0.08em;
+				margin-bottom: 0;
+				padding: 8px 24px;
+				position: relative;
+				text-transform: uppercase;
+
+				&:before {
+					content: "";
+					background-color: rgba($white, 0.32);
+					height: 100%;
+					mask-image: url(../images/symbols/icon-chevron-down.svg);
+					mask-repeat: no-repeat;
+					mask-position: right center;
+					mask-size: contain;
+					right: 18px;
+					position: absolute;
+					top: 0;
+					width: 20px;
+				}
+
+				&.is-toggled {
+
+					&:before {
+						mask-image: url(../images/symbols/icon-chevron-up.svg);
+					}
+				}
+			}
+
+			.link {
+				// @include font-size-400;
+				display: block;
+				padding: 8px 24px;
+				transition: all 0.2s ease-out;
+
+				&:hover,
+				&:focus {
+					background-color: rgba($black, 0.2);
+					text-decoration: none;
+				}
+
+				&.is-current {
+					background-color: rgba($white, 0.12);
+					font-weight: 700;
+				}
+			}
+		}
+	}
+}

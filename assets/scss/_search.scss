@@ -1,0 +1,35 @@
+.search-bar {
+	display: flex;
+
+	&:hover {
+
+		.input {
+			border-color: $color-one-500;
+		}
+
+		.button {
+			background-color: $color-one-500;
+			color: $white;
+		}
+	}
+
+	.input {
+		border-top-right-radius: 0;
+		border-bottom-right-radius: 0;
+		flex: 1 1 0;
+
+		&:focus {
+
+
+			+ .button {
+				background-color: $color-one-500;
+				color: $white;
+			}
+		}
+	}
+
+	.button {
+		border-top-left-radius: 0;
+		border-bottom-left-radius: 0;
+	}
+}

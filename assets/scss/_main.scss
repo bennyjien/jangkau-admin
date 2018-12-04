@@ -1,0 +1,24 @@
+.main-content {
+	flex: 1 1 auto;
+	min-width: 0;
+	width: 100%;
+
+	.section {
+
+		&:not(:last-child) {
+			margin-bottom: 32px;
+		}
+	}
+}
+
+.main-aside {
+	background-color: $color-one-800;
+	color: $white;
+	flex: 0 0 auto;
+	order: -1;
+	width: 256px;
+
+	a {
+		color: $white;
+	}
+}
