@@ -1,0 +1,91 @@
+<!-- @import variables -->
+<!-- $admin-toggle-items-admin: toggled -->
+<!-- $admin-nav-admin-donation: link is-current -->
+<!-- @import header -->
+
+			<div id="site-content" class="site-content">
+				<div class="site-content-inner">
+					<div class="main-content" role="main">
+						<div class="admin-page-container">
+							<header class="admin-page-header">
+								<div class="page-breadcrumb">
+									<p class="breadcrumb"><span class="parent">Admin Area</span> / <span class="parent"><a href="admin-donation.html" class="link">Sumbangan</a></span> / <span class="current">Andy Kusuma</span></p>
+								</div>
+								<div class="avatar-nav">
+									<div class="avatar-nav-link">
+										<a href="#avatar-nav-menu" class="link js-toggle"><span class="initial">AD</span></a>
+									</div>
+									<div id="avatar-nav-menu" class="avatar-nav-menu">
+										<ul class="items">
+											<li class="item">
+												<a class="link" href="user-account.html">Account</a>
+											</li>
+											<li class="item">
+												<a class="link" href="user-login.html">Logout</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</header>
+							<div class="admin-page-content">
+								<section class="section">
+									<h1 class="page-title">Andy Kusuma</h1>
+									<form class="form">
+										<div class="form-input js-form-input">
+											<label for="input-name" class="form-input-heading">Nama</label>
+											<div class="form-input-field is-required">
+												<input type="text" id="input-name" class="input" value="Andy Kusuma" placeholder="Enter your name">
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<label for="input-date" class="form-input-heading">Tanggal</label>
+											<div class="form-input-field is-required">
+												<input type="text" id="input-date" class="input" value="26/10/2018 10:15" placeholder="DD/MM/YYYY HH:MM">
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<p for="input-donation" class="form-input-heading">Sumbangan</p>
+											<div class="form-input-fields">
+												<div class="form-input-select form-input-field is-required">
+													<p class="placeholder">Produk</p>
+													<select name="input-donation" id="input-role" class="input">
+														<option value="" disabled>Select role</option>
+														<option value="1" selected>Kursi Roda</option>
+														<option value="2">Kasur</option>
+														<option value="3">Tongkat Jalan</option>
+													</select>
+												</div>
+												<div class="form-input-field is-required">
+													<p class="placeholder">Jumlah</p>
+													<input type="text" class="input" value="2" placeholder="Jumlah">
+												</div>
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<label for="input-status" class="form-input-heading">Status</label>
+											<div class="form-input-select form-input-field is-required">
+												<select name="input-status" id="input-status" class="input">
+													<option value="" disabled>Select status</option>
+													<option value="1" selected>Menunggu sumbangan</option>
+													<option value="2">Sumbangan diterima</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-submit">
+											<button class="button button-full">Simpan</button>
+										</div>
+									</form>
+								</section>
+							</div>
+							<footer class="admin-page-footer">
+								<p class="attribution">Developed by <a href="http://icubic.co.id" class="link">ICUBIC</a></p>
+							</footer>
+						</div>
+					</div>
+
+					<!-- @import sidebar -->
+
+				</div>
+			</div>
+
+<!-- @import footer -->

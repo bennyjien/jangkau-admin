@@ -1,0 +1,110 @@
+<!-- @import variables -->
+<!-- $admin-toggle-items-admin: toggled -->
+<!-- $admin-nav-admin-request: link is-current -->
+<!-- @import header -->
+
+			<div id="site-content" class="site-content">
+				<div class="site-content-inner">
+					<div class="main-content" role="main">
+						<div class="admin-page-container">
+							<header class="admin-page-header">
+								<div class="page-breadcrumb">
+									<p class="breadcrumb"><span class="parent">Admin Area</span> /  <span class="parent"><a href="admin-request.html" class="link">Permohonan</a></span> / <span class="current">Almaida Senopati</span></p>
+								</div>
+								<div class="avatar-nav">
+									<div class="avatar-nav-link">
+										<a href="#avatar-nav-menu" class="link js-toggle"><span class="initial">AD</span></a>
+									</div>
+									<div id="avatar-nav-menu" class="avatar-nav-menu">
+										<ul class="items">
+											<li class="item">
+												<a class="link" href="user-account.html">Account</a>
+											</li>
+											<li class="item">
+												<a class="link" href="user-login.html">Logout</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</header>
+							<div class="admin-page-content">
+								<section class="section">
+									<h1 class="page-title">Almaida Senopati</h1>
+									<form action="">
+										<div class="form-input js-form-input">
+											<label for="input-name" class="form-input-heading">Nama Pemohon</label>
+											<div class="form-input-field is-required">
+												<input type="text" id="input-name" class="input" value="Almaida Senopati" placeholder="Masukkan Nama Pemohon">
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="form-group-item">
+												<div class="form-input js-form-input">
+													<label for="input-role" class="form-input-heading">Tempat Lahir</label>
+													<div class="form-input-field is-required">
+														<input type="text" class="input" value="Dusun Rawa Tengah" placeholder="Masukkan Tempat Lahir">
+													</div>
+												</div>
+											</div>
+											<div class="form-group-item">
+												<div class="form-input js-form-input">
+													<label for="input-role" class="form-input-heading">Tanggal Lahir</label>
+													<div class="form-input-field is-required">
+														<input type="text" class="input" value="31/10/1946" placeholder="DD/MM/YYYY">
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<label for="input-phone" class="form-input-heading">Telepon</label>
+											<div class="form-input-phone form-input-field is-required">
+												<div class="inputs">
+													<input type="text" id="input-phone-area" class="input input-area" value="+62" placeholder="+62" readonly>
+													<input type="text" id="input-phone-number" class="input input-number" value="81234889900" placeholder="Enter your phone">
+												</div>
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<label for="input-address" class="form-input-heading">Alamat Lengkap</label>
+											<div class="form-input-field is-required">
+												<textarea type="text" id="input-address" class="input" placeholder="Masukkan Alamat Center">Jl. Padi Kapas No. 82&#013;Dusun Rawa Tengah RT01/RW02&#013;Blitar, Jawa Timur 15221</textarea>
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<label for="input-note" class="form-input-heading">Catatan</label>
+											<div class="form-input-field">
+												<textarea type="text" id="input-note" class="input" placeholder="Catatan lainnya"></textarea>
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<label for="input-status" class="form-input-heading">Status</label>
+											<div class="form-input-select form-input-field is-required">
+												<select name="input-status" id="input-status" class="input">
+													<option value="" disabled>Select status</option>
+													<option value="1" selected>Menunggu verifikasi</option>
+													<option value="2">Proses verifikasi</option>
+													<option value="3">Ditolak</option>
+													<option value="4">Mencari sumbangan</option>
+													<option value="5">Mengirim sumbangan</option>
+													<option value="6">Tersumbang</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-submit">
+											<button class="button button-full">Simpan</button>
+										</div>
+									</form>
+								</section>
+							</div>
+							<footer class="admin-page-footer">
+								<p class="attribution">Developed by <a href="http://icubic.co.id" class="link">ICUBIC</a></p>
+							</footer>
+						</div>
+					</div>
+
+					<!-- @import sidebar -->
+
+				</div>
+			</div>
+
+<!-- @import footer -->

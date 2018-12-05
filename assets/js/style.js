@@ -466,25 +466,28 @@
 		const $formLabel = document.querySelectorAll('.js-form-input');
 
 		$formLabel.forEach( element => {
-			let $input = element.querySelector('.input');
+			let $input = element.querySelectorAll('.input');
 
-			$input.addEventListener('focus', function() {
-				this.parentNode.classList.add('is-filled');
+			$input.forEach(input => {
+				input.addEventListener('focus', function() {
+					this.parentNode.classList.add('is-filled');
+				});
+
+				input.addEventListener('blur', function() {
+					var input = this;
+					setTimeout(function() {
+						if (input.value === '') input.parentNode.classList.remove('is-filled');
+					}, 100);
+				});
+
+				window.addEventListener('load', function() {
+					input.parentNode.classList.add('is-loaded');
+					if (input.value) {
+						input.parentNode.classList.add('is-filled');
+					}
+				});
 			});
 
-			$input.addEventListener('blur', function() {
-				var input = this;
-				setTimeout(function() {
-					if (input.value === '') input.parentNode.classList.remove('is-filled');
-				}, 100);
-			});
-
-			window.addEventListener('load', function() {
-				$input.parentNode.classList.add('is-loaded');
-				if ($input.value) {
-					$input.parentNode.classList.add('is-filled');
-				}
-			});
 		});
 	}();
 

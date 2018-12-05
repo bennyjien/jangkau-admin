@@ -11,7 +11,7 @@
 	}
 }
 
-.form-inputs {
+.form-group {
 	margin: -8px -8px 8px;
 	position: relative;
 
@@ -44,18 +44,27 @@
 
 	@at-root {
 		.form-input-heading {
-			color: $color-text-light;
 			display: block;
 			margin-bottom: 6px;
 
 			.small {
 				@include font-size-300;
+				color: $color-text-light;
 				display: block;
 			}
 		}
 
+		.form-input-fields {
+			display: flex;
+		}
+
 		.form-input-field {
+			flex: 1 1 0;
 			position: relative;
+
+			+ .form-input-field {
+				margin-left: 16px;
+			}
 
 			&.is-required {
 
@@ -76,6 +85,7 @@
 			&.is-filled {
 
 				.placeholder {
+					color: $color-text;
 					font-weight: 700;
 					transform: scale(0.7) translateY(-10px);
 				}
@@ -101,6 +111,7 @@
 			}
 
 			.placeholder {
+				color: $color-text-light;
 				display: block;
 				left: 9px;
 				margin: 0;
@@ -135,6 +146,18 @@
 					font-weight: 700;
 					transform: scale(0.7) translateY(-10px);
 				}
+			}
+		}
+
+		.form-input-table {
+
+			td {
+				padding-bottom: 8px;
+				padding-top: 8px;
+			}
+
+			.input {
+				width: 100%;
 			}
 		}
 
@@ -206,10 +229,9 @@
 	}
 
 	@at-root {
-		.form-file-label {
-			display: inline-block;
-			font-weight: 700;
-			margin-bottom: 2px;
+		.form-file-heading {
+			display: block;
+			margin-bottom: 6px;
 		}
 
 		.form-file-input {
@@ -300,6 +322,7 @@
 }
 
 .form-submit {
+	margin-top: 32px;
 
 	&.form-submit-right {
 		text-align: right;

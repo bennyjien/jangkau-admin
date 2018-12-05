@@ -1,0 +1,172 @@
+<!-- @import variables -->
+<!-- $admin-toggle-items-admin: toggled -->
+<!-- $admin-nav-admin-product: link is-current -->
+<!-- @import header -->
+
+			<div id="site-content" class="site-content">
+				<div class="site-content-inner">
+					<div class="main-content" role="main">
+						<div class="admin-page-container">
+							<header class="admin-page-header">
+								<div class="page-breadcrumb">
+									<p class="breadcrumb"><span class="parent">Admin Area</span> /  <span class="parent"><a href="admin-product.html" class="link">Produk Bantuan</a></span> / <span class="current">Kursi Roda</span></p>
+								</div>
+								<div class="avatar-nav">
+									<div class="avatar-nav-link">
+										<a href="#avatar-nav-menu" class="link js-toggle"><span class="initial">AD</span></a>
+									</div>
+									<div id="avatar-nav-menu" class="avatar-nav-menu">
+										<ul class="items">
+											<li class="item">
+												<a class="link" href="user-account.html">Account</a>
+											</li>
+											<li class="item">
+												<a class="link" href="user-login.html">Logout</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</header>
+							<div class="admin-page-content">
+								<section class="section">
+									<h1 class="page-title">Kursi Roda</h1>
+									<form action="">
+										<div class="form-input js-form-input">
+											<label for="input-name" class="form-input-heading">Nama Produk</label>
+											<div class="form-input-field is-required">
+												<input type="text" id="input-name" class="input" value="Kursi Roda" placeholder="Masukkan Nama Produk">
+											</div>
+										</div>
+										<div class="form-file js-form-file">
+											<p class="form-file-heading">Icon Produk</p>
+											<div class="form-file-input">
+												<input type="file" id="file-attachment-icon" class="input" name="file-attachment-icon" data-multiple-placeholder="{count} files selected" multiple>
+												<label for="file-attachment-icon" class="label"><span class="button">Browse files</span> <span class="placeholder">No file selected&hellip;</span> <a href="#" class="remove" title="Remove attachment">&times;</a></label>
+											</div>
+										</div>
+										<div class="form-file js-form-file">
+											<p class="form-file-heading">Gambar Produk</p>
+											<div class="form-file-input">
+												<input type="file" id="file-attachment-photo" class="input" name="file-attachment-photo" data-multiple-placeholder="{count} files selected" multiple>
+												<label for="file-attachment-photo" class="label"><span class="button">Browse files</span> <span class="placeholder">No file selected&hellip;</span> <a href="#" class="remove" title="Remove attachment">&times;</a></label>
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<p class="form-input-heading">Stok</p>
+											<div class="form-input-table">
+												<table class="table">
+													<thead>
+														<tr>
+															<th class="th">ID</th>
+															<th class="th">Nama</th>
+															<th class="th">Stok</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="strong">#JC001</td>
+															<td>Jangkau Help Center</td>
+															<td><input class="input" type="text" value="6" placeholder="Stok"></td>
+														</tr>
+														<tr>
+															<td class="strong">#JC002</td>
+															<td>Abbalove Center</td>
+															<td><input class="input" type="text" value="4" placeholder="Stok"></td>
+														</tr>
+														<tr>
+															<td class="strong">#JC003</td>
+															<td>ICUBIC Center</td>
+															<td><input class="input" type="text" value="8" placeholder="Stok"></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<p class="form-input-heading">Toko Rekomendasi</p>
+											<div class="form-input-table">
+												<table class="table">
+													<thead>
+														<tr>
+															<th class="th">ID</th>
+															<th class="th">Logo</th>
+															<th class="th">Nama</th>
+															<th class="th">Link</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="strong">#1</td>
+															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
+															<td><input class="input" type="text" value="Med Station" placeholder="Nama"></td>
+															<td><input class="input" type="text" value="http://tokopedia.com/JKS11511C" placeholder="Link"></td>
+														</tr>
+														<tr>
+															<td class="strong">#2</td>
+															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
+															<td><input class="input" type="text" value="" placeholder="Nama"></td>
+															<td><input class="input" type="text" value="" placeholder="Stok"></td>
+														</tr>
+														<tr>
+															<td class="strong">#3</td>
+															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
+															<td><input class="input" type="text" value="" placeholder="Nama"></td>
+															<td><input class="input" type="text" value="" placeholder="Stok"></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<p class="form-input-heading">Link Rekomendasi Lainnya</p>
+											<div class="form-input-table">
+												<table class="table">
+													<thead>
+														<tr>
+															<th class="th">ID</th>
+															<th class="th">Logo</th>
+															<th class="th">Label</th>
+															<th class="th">Link</th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="strong">#1</td>
+															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
+															<td><input class="input" type="text" value="Tokopedia" placeholder="Nama"></td>
+															<td><input class="input" type="text" value="http://tokopedia.com/s/1234" placeholder="Link"></td>
+														</tr>
+														<tr>
+															<td class="strong">#2</td>
+															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
+															<td><input class="input" type="text" value="Buka Lapak" placeholder="Nama"></td>
+															<td><input class="input" type="text" value="http://bukalapak.com/s/1234" placeholder="Stok"></td>
+														</tr>
+														<tr>
+															<td class="strong">#3</td>
+															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
+															<td><input class="input" type="text" value="" placeholder="Nama"></td>
+															<td><input class="input" type="text" value="" placeholder="Stok"></td>
+														</tr>
+													</tbody>
+												</table>
+											</div>
+										</div>
+										<div class="form-submit">
+											<button class="button button-full">Simpan</button>
+										</div>
+									</form>
+								</section>
+							</div>
+							<footer class="admin-page-footer">
+								<p class="attribution">Developed by <a href="http://icubic.co.id" class="link">ICUBIC</a></p>
+							</footer>
+						</div>
+					</div>
+
+					<!-- @import sidebar -->
+
+				</div>
+			</div>
+
+<!-- @import footer -->

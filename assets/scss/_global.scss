@@ -41,6 +41,11 @@
 		font-weight: 700;
 	}
 
+	&.button-full {
+		padding: 9px 24px;
+		width: 100%;
+	}
+
 	&.button-line {
 		background-color: transparent;
 		border-color: $color-one-500;

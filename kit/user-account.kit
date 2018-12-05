@@ -28,8 +28,6 @@
 							<div class="admin-page-content">
 								<section class="section">
 									<h1 class="page-title">Account</h1>
-								</section>
-								<section class="section">
 									<form class="form">
 										<div class="form-input js-form-input">
 											<label for="input-name" class="form-input-heading">Nama</label>
@@ -69,17 +67,19 @@
 												</div>
 											</div>
 										</div>
-										<div class="form-text">
-											<label for="#" class="label">Tanggal Lahir</label>
-											<input type="text" class="input" value="31/10/1980">
+										<div class="form-input js-form-input">
+											<label for="input-role" class="form-input-heading">Tanggal Lahir</label>
+											<div class="form-input-field is-required">
+												<input type="text" class="input" value="31/10/1980" placeholder="DD/MM/YYYY">
+											</div>
 										</div>
-										<div class="form-radio">
+										<!-- <div class="form-radio">
 											<p class="legend">Jenis Kelamin</p>
 											<div class="inputs">
 												<label class="label"><input type="radio" name="input-user-gender" id="input-user-gender-male" class="input" checked> Laki-laki</label>
 												<label class="label"><input type="radio" name="input-user-gender" id="input-user-gender-female" class="input"> Perempuan</label>
 											</div>
-										</div>
+										</div> -->
 										<div class="form-submit">
 											<button class="button">Save Settings</button>
 										</div>

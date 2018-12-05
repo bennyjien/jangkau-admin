@@ -7,11 +7,23 @@
 		color: $color-text;
 		font-weight: 700;
 	}
+
+	.link {
+
+		&:hover,
+		&:focus {
+			color: $color-one-500;
+		}
+	}
 }
 
 .page-title {
 	font-weight: 300;
-	margin-bottom: 32px;
+	margin-bottom: 1em;
+
+	.count {
+		color: $color-text-lighter;
+	}
 }
 
 .page-tab {
