@@ -269,13 +269,21 @@
 			}
 
 			.button {
+				@include font-size-400;
+				background-color: $color-600;
 				cursor: pointer;
 				margin-right: 4px;
+				padding: 5px 12px;
+
+				&:hover,
+				&:focus {
+					background-color: $color-700;
+				}
 			}
 
 			.placeholder {
 				@include font-size-400;
-				color: $color-text-light;
+				color: $color-text;
 				cursor: pointer;
 				display: inline-block;
 				vertical-align: middle;
@@ -298,6 +306,38 @@
 				}
 			}
 		}
+
+		.form-file-caption {
+			@include font-size-200;
+			color: $color-text-light;
+			margin-top: 6px;
+		}
+	}
+}
+
+.form-media {
+
+	&:not(:last-child) {
+		margin-bottom: 24px;
+	}
+
+	@at-root {
+		.form-media-heading {
+			display: block;
+			margin-bottom: 6px;
+		}
+
+		.form-media-body {
+			border: 1px solid $color-border;
+			border-radius: 3px;
+			display: flex;
+			padding: 12px;
+		}
+
+		.form-media-preview {
+			margin-right: 12px;
+			width: 80px;
+		}
 	}
 }
 
@@ -318,6 +358,76 @@
 
 	.label {
 		margin: 4px;
+	}
+}
+
+.form-repeater {
+	border: none;
+	padding: 0;
+
+	&:not(:last-child) {
+		margin-bottom: 24px;
+	}
+
+	.legend {
+		font-weight: 400;
+		margin-bottom: 4px;
+	}
+
+	table {
+		margin-bottom: 0;
+	}
+
+	th,
+	td {
+
+		&:last-child {
+			width: 80px;
+		}
+	}
+
+	th {
+		vertical-align: middle;
+	}
+
+	.input {
+		width: 100%;
+	}
+
+	.repeater {
+
+		&:nth-child(2):last-child {
+
+			.form-repeater-remove {
+				display: none;
+			}
+		}
+
+		&.repeater-source {
+			display: none;
+		}
+
+		[class^="form-"] {
+
+			&:not(:last-child) {
+				margin-bottom: 4px;
+			}
+		}
+	}
+
+	@at-root {
+		.form-repeater-add,
+		.form-repeater-remove {
+			font-weight: 700;
+			width: 100%;
+		}
+
+		.form-repeater-alert {
+			@include font-size-200;
+			color: $color-alert-500;
+			display: none;
+			margin-top: 6px;
+		}
 	}
 }
 

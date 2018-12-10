@@ -27,6 +27,12 @@ function hasChild(element, child) {
 	return false;
 }
 
+// find parent
+function findParent(element, classname) {
+	while ((element = element.parentElement) && !element.classList.contains(classname));
+	return element;
+}
+
 // get mouse position (http://www.window.org/js/events_properties.html#position)
 function mousePos(event) {
 	var posX = 0,

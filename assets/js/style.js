@@ -556,4 +556,85 @@
 		});
 	}();
 
+	const repeaterFunction = function() {
+		var $repeaterForm = document.querySelectorAll('.js-form-repeater');
+
+		function repeaterAdd($button, event) {
+			var $this = findParent($button, 'js-form-repeater'),
+				$repeaters = $this.querySelector('.repeaters'),
+				$repeater = $repeaters.querySelectorAll('.repeater'),
+				$repeaterSource = $this.querySelector('.repeater-source'),
+				$repeaterAlert = $this.querySelector('.form-repeater-alert'),
+				repeaterMax = $this.dataset.repeaterMax || 99,
+				repeaterCurrent = $repeater.length - 1;
+
+			function generateID(repeater, type) {
+				var regex = /((?!^)\{.*?\})/;
+				var nameSuffix = $(repeater).data('repeater-'+ type).split(regex);
+				nameSuffix.forEach(function(element, n) {
+					if (element === '{timestamp}') {
+						nameSuffix[n] = timestamp;
+					}
+				});
+				nameSuffix = nameSuffix.join('');
+				$(repeater).attr(type, nameSuffix);
+			}
+
+			if (repeaterCurrent < repeaterMax) {
+				var $repeaterNew = $repeaterSource.cloneNode(true),
+					repeaterId = $repeaterNew.querySelectorAll('[data-repeater-id]'),
+					repeaterName = $repeaterNew.querySelectorAll('[data-repeater-name]'),
+					timestamp = $.now();
+
+				$repeaterNew.classList.remove('repeater-source');
+				$repeaters.appendChild($repeaterNew);
+
+				if (repeaterId) {
+					repeaterId.forEach(element => function() {
+						// generateID(element, 'id');
+					});
+				}
+
+				if (repeaterName) {
+					repeaterName.forEach(element => function() {
+						// generateID(element, 'name');
+					});
+				}
+
+				repeaterCurrent+=1;
+			} else {
+				$repeaterAlert.style.display = 'block';
+			}
+			event.preventDefault();
+		}
+
+		function repeaterRemove($button, event) {
+			var $this = findParent($button, 'js-form-repeater'),
+				$repeater = $this.querySelectorAll('.repeater'),
+				$repeaterAlert = $this.querySelector('.form-repeater-alert'),
+				repeaterCurrent = $repeater.length - 1;
+
+			var parent = $button.closest('.repeater');
+			console.log($button.parentNode.parentNode);
+			// why parent jump to first child?
+			parent.remove();
+			$repeaterAlert.style.display = 'none';
+			repeaterCurrent-=1;
+			event.preventDefault();
+		}
+
+		$repeaterForm.forEach(element => {
+			element.addEventListener('click', function(event) {
+				if (event.target && event.target.matches('.form-repeater-add')) {
+					const $buttonAdd = element.querySelector('.form-repeater-add');
+					repeaterAdd($buttonAdd, event);
+				} else if (event.target && event.target.matches('.form-repeater-remove')) {
+					const $buttonRemove = element.querySelector('.form-repeater-remove');
+					repeaterRemove($buttonRemove, event);
+				}
+				event.preventDefault();
+			});
+		});
+	}();
+
 })();

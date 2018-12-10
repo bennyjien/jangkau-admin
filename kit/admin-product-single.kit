@@ -37,18 +37,48 @@
 												<input type="text" id="input-name" class="input" value="Kursi Roda" placeholder="Masukkan Nama Produk">
 											</div>
 										</div>
-										<div class="form-file js-form-file">
-											<p class="form-file-heading">Icon Produk</p>
-											<div class="form-file-input">
-												<input type="file" id="file-attachment-icon" class="input" name="file-attachment-icon" data-multiple-placeholder="{count} files selected" multiple>
-												<label for="file-attachment-icon" class="label"><span class="button">Browse files</span> <span class="placeholder">No file selected&hellip;</span> <a href="#" class="remove" title="Remove attachment">&times;</a></label>
+										<div class="form-group">
+											<div class="form-group-item">
+												<div class="form-media js-form-file">
+													<p class="form-media-heading">Icon Produk</p>
+													<div class="form-media-body">
+														<div class="form-media-preview">
+															<div class="current">
+																<img src="http://placehold.it/320x320/eeeeee/111111">
+															</div>
+														</div>
+														<div class="form-media-input">
+															<div class="form-file js-form-file">
+																<div class="form-file-input">
+																	<input type="file" id="file-attachment-icon" class="input" name="file-attachment-icon" data-multiple-placeholder="{count} files selected" multiple>
+																	<label for="file-attachment-icon" class="label"><span class="button">Browse files</span> <span class="placeholder">No file selected&hellip;</span> <a href="#" class="remove" title="Remove attachment">&times;</a></label>
+																</div>
+																<p class="form-file-caption">Ukuran optimal 320x320, maksimal 200 kb.</p>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
-										</div>
-										<div class="form-file js-form-file">
-											<p class="form-file-heading">Gambar Produk</p>
-											<div class="form-file-input">
-												<input type="file" id="file-attachment-photo" class="input" name="file-attachment-photo" data-multiple-placeholder="{count} files selected" multiple>
-												<label for="file-attachment-photo" class="label"><span class="button">Browse files</span> <span class="placeholder">No file selected&hellip;</span> <a href="#" class="remove" title="Remove attachment">&times;</a></label>
+											<div class="form-group-item">
+												<div class="form-media js-form-file">
+													<p class="form-media-heading">Gambar Produk</p>
+													<div class="form-media-body">
+														<div class="form-media-preview">
+															<div class="current">
+																<img src="http://placehold.it/320x320/eeeeee/111111">
+															</div>
+														</div>
+														<div class="form-media-input">
+															<div class="form-file js-form-file">
+																<div class="form-file-input">
+																	<input type="file" id="file-attachment-photo" class="input" name="file-attachment-photo" data-multiple-placeholder="{count} files selected" multiple>
+																	<label for="file-attachment-photo" class="label"><span class="button">Browse files</span> <span class="placeholder">No file selected&hellip;</span> <a href="#" class="remove" title="Remove attachment">&times;</a></label>
+																</div>
+																<p class="form-file-caption">Ukuran optimal 320x320, maksimal 200 kb.</p>
+															</div>
+														</div>
+													</div>
+												</div>
 											</div>
 										</div>
 										<div class="form-input js-form-input">
@@ -117,6 +147,34 @@
 												</table>
 											</div>
 										</div>
+										<fieldset class="form-repeater js-form-repeater" data-repeater-max="5">
+											<legend class="legend">Link Rekomendasi Lainnya</legend>
+											<table>
+												<thead>
+													<tr>
+														<th>Nama Biaya</th>
+														<th>Dari</th>
+														<th>Sampai</th>
+														<th><a href="#" class="form-repeater-add button" title="Add Row">+</a></th>
+													</tr>
+												</thead>
+												<tbody class="repeaters">
+													<tr class="repeater repeater-source">
+														<td><input type="text" class="input" data-repeater-id="school-fee-name-{timestamp}" data-repeater-name="acf[test123]{timestamp}[testlagi]" placeholder="Contoh: Biaya Pendaftaran"></td>
+														<td><input type="text" class="input" data-repeater-id="school-fee-from-{timestamp}" data-repeater-name="acf[test123]{timestamp}[testlagi]" placeholder="Contoh: 500000"></td>
+														<td><input type="text" class="input" data-repeater-id="school-fee-to-{timestamp}" data-repeater-name="acf[test123]{timestamp}[testlagi]" placeholder="Contoh: 1000000"></td>
+														<td><a href="#" class="form-repeater-remove button button-gray" title="Delete Row">-</a></td>
+													</tr>
+													<tr class="repeater">
+														<td><input type="text" id="school-fee-name-1" class="input" placeholder="Contoh: Biaya Pendaftaran"></td>
+														<td><input type="text" id="school-fee-from-1" class="input" placeholder="Contoh: 500000"></td>
+														<td><input type="text" id="school-fee-to-1" class="input" placeholder="Contoh: 1000000"></td>
+														<td><a href="#" class="form-repeater-remove button button-gray" title="Delete Row">-</a></td>
+													</tr>
+												</tbody>
+											</table>
+											<p class="form-repeater-alert">Maksimal 5 baris</p>
+										</fieldset>
 										<div class="form-input js-form-input">
 											<p class="form-input-heading">Link Rekomendasi Lainnya</p>
 											<div class="form-input-table">
