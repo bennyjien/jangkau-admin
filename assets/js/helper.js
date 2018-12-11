@@ -27,10 +27,18 @@ function hasChild(element, child) {
 	return false;
 }
 
-// find parent
-function findParent(element, classname) {
-	while ((element = element.parentElement) && !element.classList.contains(classname));
-	return element;
+// polyfill: closest
+if (window.Element && !Element.prototype.closest) {
+	Element.prototype.closest = function(s) {
+		var matches = (this.document || this.ownerDocument).querySelectorAll(s),
+			i,
+			el = this;
+		do {
+			i = matches.length;
+			while (--i >= 0 && matches.item(i) !== el) {};
+		} while ((i < 0) && (el = el.parentElement));
+		return el;
+	};
 }
 
 // get mouse position (http://www.window.org/js/events_properties.html#position)
