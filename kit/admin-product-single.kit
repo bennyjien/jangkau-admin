@@ -39,7 +39,7 @@
 										</div>
 										<div class="form-group">
 											<div class="form-group-item">
-												<div class="form-media js-form-file">
+												<div class="form-media">
 													<p class="form-media-heading">Icon Produk</p>
 													<div class="form-media-body">
 														<div class="form-media-preview">
@@ -48,34 +48,24 @@
 															</div>
 														</div>
 														<div class="form-media-input">
-															<div class="form-file js-form-file">
-																<div class="form-file-input">
-																	<input type="file" id="file-attachment-icon" class="input" name="file-attachment-icon" data-multiple-placeholder="{count} files selected" multiple>
-																	<label for="file-attachment-icon" class="label"><span class="button">Browse files</span> <span class="placeholder">No file selected&hellip;</span> <a href="#" class="remove" title="Remove attachment">&times;</a></label>
-																</div>
-																<p class="form-file-caption">Ukuran optimal 320x320, maksimal 200 kb.</p>
-															</div>
+															<a href="#" class="button button-small">Change Photo</a>
+															<p class="form-media-caption">Ukuran optimal 320x320, maksimal 200 kb.</p>
 														</div>
 													</div>
 												</div>
 											</div>
 											<div class="form-group-item">
-												<div class="form-media js-form-file">
+												<div class="form-media">
 													<p class="form-media-heading">Gambar Produk</p>
 													<div class="form-media-body">
 														<div class="form-media-preview">
 															<div class="current">
-																<img src="http://placehold.it/320x320/eeeeee/111111">
+																<a href="#" class="link link-media"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-camera-add" /></svg> Upload</a>
 															</div>
 														</div>
 														<div class="form-media-input">
-															<div class="form-file js-form-file">
-																<div class="form-file-input">
-																	<input type="file" id="file-attachment-photo" class="input" name="file-attachment-photo" data-multiple-placeholder="{count} files selected" multiple>
-																	<label for="file-attachment-photo" class="label"><span class="button">Browse files</span> <span class="placeholder">No file selected&hellip;</span> <a href="#" class="remove" title="Remove attachment">&times;</a></label>
-																</div>
-																<p class="form-file-caption">Ukuran optimal 320x320, maksimal 200 kb.</p>
-															</div>
+															<a href="#" class="button button-small">Upload Photo</a>
+															<p class="form-media-caption">Ukuran optimal 320x320, maksimal 200 kb.</p>
 														</div>
 													</div>
 												</div>
@@ -119,7 +109,7 @@
 													<thead>
 														<tr>
 															<th class="th">ID</th>
-															<th class="th">Logo</th>
+															<th class="th" width="80px">Logo</th>
 															<th class="th">Nama</th>
 															<th class="th">Link</th>
 														</tr>
@@ -127,19 +117,19 @@
 													<tbody>
 														<tr>
 															<td class="strong">#1</td>
-															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
+															<td><img src="http://placehold.it/64x64/eeeeee/111111"></td>
 															<td><input class="input" type="text" value="Med Station" placeholder="Nama"></td>
 															<td><input class="input" type="text" value="http://tokopedia.com/JKS11511C" placeholder="Link"></td>
 														</tr>
 														<tr>
 															<td class="strong">#2</td>
-															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
+															<td><a href="#" class="link link-media"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-camera-add" /></svg> Upload</a></td>
 															<td><input class="input" type="text" value="" placeholder="Nama"></td>
 															<td><input class="input" type="text" value="" placeholder="Stok"></td>
 														</tr>
 														<tr>
 															<td class="strong">#3</td>
-															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
+															<td><a href="#" class="link link-media"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-camera-add" /></svg> Upload</a></td>
 															<td><input class="input" type="text" value="" placeholder="Nama"></td>
 															<td><input class="input" type="text" value="" placeholder="Stok"></td>
 														</tr>
@@ -149,79 +139,38 @@
 										</div>
 										<fieldset class="form-repeater js-form-repeater" data-repeater-max="5">
 											<legend class="legend">Link Rekomendasi Lainnya</legend>
-											<table>
+											<table class="table">
 												<thead>
 													<tr>
-														<th>Nama Biaya</th>
-														<th>Dari</th>
-														<th>Sampai</th>
-														<th><a href="#" class="form-repeater-add button" title="Add Row">+</a></th>
+														<th class="th" width="80px">Logo</th>
+														<th class="th">Label</th>
+														<th class="th">Link</th>
+														<th class="th"><a href="#" class="form-repeater-add button" title="Add Row">+</a></th>
 													</tr>
 												</thead>
-												<tbody class="repeaters">
+												<tbody class="repeaters js-slip">
 													<tr class="repeater repeater-source">
-														<td><input type="text" class="input" data-repeater-id="school-fee-name-{timestamp}" data-repeater-name="acf[test123]{timestamp}[testlagi]" placeholder="Contoh: Biaya Pendaftaran"></td>
-														<td><input type="text" class="input" data-repeater-id="school-fee-from-{timestamp}" data-repeater-name="acf[test123]{timestamp}[testlagi]" placeholder="Contoh: 500000"></td>
-														<td><input type="text" class="input" data-repeater-id="school-fee-to-{timestamp}" data-repeater-name="acf[test123]{timestamp}[testlagi]" placeholder="Contoh: 1000000"></td>
+														<td><a href="#" class="link link-media"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-camera-add" /></svg> Upload</a></td>
+														<td><input type="text" class="input" data-repeater-id="recommendation-other-name-{timestamp}" data-repeater-name="acf[other-name]{timestamp}" placeholder="Nama"></td>
+														<td><input type="text" class="input" data-repeater-id="recommendation-other-link-{timestamp}" data-repeater-name="acf[other-link]{timestamp}" placeholder="Link"></td>
 														<td><a href="#" class="form-repeater-remove button button-gray" title="Delete Row">-</a></td>
 													</tr>
 													<tr class="repeater">
-														<td><input type="text" id="school-fee-name-1" class="input" placeholder="Contoh: Biaya Pendaftaran"></td>
-														<td><input type="text" id="school-fee-from-1" class="input" placeholder="Contoh: 500000"></td>
-														<td><input type="text" id="school-fee-to-1" class="input" placeholder="Contoh: 1000000"></td>
+														<td><img src="http://placehold.it/64x64/eeeeee/111111"></td>
+														<td><input type="text" id="recommendation-other-name-1" class="input" name="acf[other-name]" placeholder="Nama" value="Tokopedia"></td>
+														<td><input type="text" id="recommendation-other-link-1" class="input" name="acf[other-link]" placeholder="Link" value="http://tokopedia.com/s/1234"></td>
 														<td><a href="#" class="form-repeater-remove button button-gray" title="Delete Row">-</a></td>
 													</tr>
 													<tr class="repeater">
-														<td><input type="text" id="school-fee-name-1" class="input" placeholder="Contoh: Biaya Pendaftaran"></td>
-														<td><input type="text" id="school-fee-from-1" class="input" placeholder="Contoh: 500000"></td>
-														<td><input type="text" id="school-fee-to-1" class="input" placeholder="Contoh: 1000000"></td>
-														<td><a href="#" class="form-repeater-remove button button-gray" title="Delete Row">-</a></td>
-													</tr>
-													<tr class="repeater">
-														<td><input type="text" id="school-fee-name-1" class="input" placeholder="Contoh: Biaya Pendaftaran"></td>
-														<td><input type="text" id="school-fee-from-1" class="input" placeholder="Contoh: 500000"></td>
-														<td><input type="text" id="school-fee-to-1" class="input" placeholder="Contoh: 1000000"></td>
+														<td><img src="http://placehold.it/64x64/eeeeee/111111"></td>
+														<td><input type="text" id="recommendation-other-name-2" class="input" name="acf[other-name]" placeholder="Nama" value="Buka Lapak"></td>
+														<td><input type="text" id="recommendation-other-link-2" class="input" name="acf[other-link]" placeholder="Link" value="http://bukalapak.com/s/1234"></td>
 														<td><a href="#" class="form-repeater-remove button button-gray" title="Delete Row">-</a></td>
 													</tr>
 												</tbody>
 											</table>
 											<p class="form-repeater-alert">Maksimal 5 baris</p>
 										</fieldset>
-										<div class="form-input js-form-input">
-											<p class="form-input-heading">Link Rekomendasi Lainnya</p>
-											<div class="form-input-table">
-												<table class="table">
-													<thead>
-														<tr>
-															<th class="th">ID</th>
-															<th class="th">Logo</th>
-															<th class="th">Label</th>
-															<th class="th">Link</th>
-														</tr>
-													</thead>
-													<tbody>
-														<tr>
-															<td class="strong">#1</td>
-															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
-															<td><input class="input" type="text" value="Tokopedia" placeholder="Nama"></td>
-															<td><input class="input" type="text" value="http://tokopedia.com/s/1234" placeholder="Link"></td>
-														</tr>
-														<tr>
-															<td class="strong">#2</td>
-															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
-															<td><input class="input" type="text" value="Buka Lapak" placeholder="Nama"></td>
-															<td><input class="input" type="text" value="http://bukalapak.com/s/1234" placeholder="Stok"></td>
-														</tr>
-														<tr>
-															<td class="strong">#3</td>
-															<td><img src="http://placehold.it/60x60/eeeeee/111111"></td>
-															<td><input class="input" type="text" value="" placeholder="Nama"></td>
-															<td><input class="input" type="text" value="" placeholder="Stok"></td>
-														</tr>
-													</tbody>
-												</table>
-											</div>
-										</div>
 										<div class="form-submit">
 											<button class="button button-full">Simpan</button>
 										</div>

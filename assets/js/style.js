@@ -633,12 +633,19 @@
 			element.addEventListener('click', function(event) {
 				if (event.target && event.target.matches('.form-repeater-add')) {
 					repeaterAdd(event.target, event);
+					event.preventDefault();
 				} else if (event.target && event.target.matches('.form-repeater-remove')) {
 					repeaterRemove(event.target, event);
+					event.preventDefault();
 				}
-				event.preventDefault();
 			});
 		});
+
+		// slip on repeater
+		$slip = document.querySelectorAll('.js-slip');
+		$slip.forEach(element => {
+			new Slip(element);
+		})
 	}();
 
 })();

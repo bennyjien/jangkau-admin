@@ -16,13 +16,12 @@ Tags: responsive-layout, mobile-first
 
 // plugins
 @import "plugins/normalize";
+@import "plugins/dragula";
 @import "plugins/flickity";
 @import "plugins/flickity-custom";
 @import "plugins/magnific-popup";
 @import "plugins/magnific-popup-custom";
 @import "plugins/stickyfill";
-// @import "plugins/wordpress";
-// @import "plugins/woocommerce";
 
 // globals
 @import "reset";

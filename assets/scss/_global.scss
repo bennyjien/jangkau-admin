@@ -172,6 +172,33 @@
 	}
 }
 
+.link {
+
+	&.link-media {
+		@include font-size-100;
+		align-items: center;
+		background-color: $color-200;
+		color: $color-600;
+		display: flex;
+		flex-direction: column;
+		font-weight: 700;
+		height: 64px;
+		justify-content: center;
+		padding: 4px;
+		position: relative;
+		text-align: center;
+		width: 64px;
+		z-index: 1;
+
+		.icon {
+			fill: $color-500;
+			height: 24px;
+			margin-bottom: 2px;
+			width: 24px;
+		}
+	}
+}
+
 .nowrap {
 	white-space: nowrap;
 }
