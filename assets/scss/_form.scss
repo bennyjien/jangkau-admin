@@ -401,6 +401,26 @@
 		padding-top: 8px;
 	}
 
+	.handle {
+		cursor: grab;
+		text-align: center;
+
+		&:hover {
+
+			.icon {
+				fill: $color-500;
+			}
+		}
+
+		.icon {
+			fill: $color-400;
+			height: 24px;
+			pointer-events: none;
+			transition: all 0.2s ease;
+			width: 24px;
+		}
+	}
+
 	.input {
 		width: 100%;
 	}

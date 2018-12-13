@@ -609,6 +609,17 @@
 					});
 				}
 
+				// add support to choices.js
+				const $repeaterChoice = $repeaterNew.querySelectorAll('.js-choice');
+
+				if ($repeaterChoice.length) {
+					$repeaterChoice.forEach(element => {
+						new Choices(element, {
+							shouldSort: false
+						});
+					});
+				}
+
 				repeaterCurrent+=1;
 			} else {
 				$repeaterAlert.style.display = 'block';
@@ -633,19 +644,22 @@
 			element.addEventListener('click', function(event) {
 				if (event.target && event.target.matches('.form-repeater-add')) {
 					repeaterAdd(event.target, event);
-					event.preventDefault();
 				} else if (event.target && event.target.matches('.form-repeater-remove')) {
 					repeaterRemove(event.target, event);
-					event.preventDefault();
 				}
 			});
 		});
 
-		// slip on repeater
-		$slip = document.querySelectorAll('.js-slip');
-		$slip.forEach(element => {
-			new Slip(element);
-		})
+		// dragula on repeater
+		$draggable = document.querySelectorAll('.js-form-repeater .repeaters');
+
+		$draggable.forEach(element => {
+			dragula([element], {
+				moves: function(el, container, handle) {
+					return handle.classList.contains('handle');
+				}
+			});
+		});
 	}();
 
 })();

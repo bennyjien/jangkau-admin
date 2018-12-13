@@ -142,28 +142,50 @@
 											<table class="table">
 												<thead>
 													<tr>
+														<th class="th" width="48px"></th>
 														<th class="th" width="80px">Logo</th>
 														<th class="th">Label</th>
 														<th class="th">Link</th>
 														<th class="th"><a href="#" class="form-repeater-add button" title="Add Row">+</a></th>
 													</tr>
 												</thead>
-												<tbody class="repeaters js-slip">
+												<tbody class="repeaters">
 													<tr class="repeater repeater-source">
+														<td class="handle"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-handle" /></svg></td>
 														<td><a href="#" class="link link-media"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-camera-add" /></svg> Upload</a></td>
-														<td><input type="text" class="input" data-repeater-id="recommendation-other-name-{timestamp}" data-repeater-name="acf[other-name]{timestamp}" placeholder="Nama"></td>
+														<td>
+															<select name="input-label-{timestamp}" data-repeater-id="input-label-{timestamp}" class="input js-choice">
+																<option value="0" disabled selected>Pilih Label</option>
+																<option value="1">Buka Lapak</option>
+																<option value="2">Tokopedia</option>
+															</select>
+														</td>
 														<td><input type="text" class="input" data-repeater-id="recommendation-other-link-{timestamp}" data-repeater-name="acf[other-link]{timestamp}" placeholder="Link"></td>
 														<td><a href="#" class="form-repeater-remove button button-gray" title="Delete Row">-</a></td>
 													</tr>
 													<tr class="repeater">
+														<td class="handle"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-handle" /></svg></td>
 														<td><img src="http://placehold.it/64x64/eeeeee/111111"></td>
-														<td><input type="text" id="recommendation-other-name-1" class="input" name="acf[other-name]" placeholder="Nama" value="Tokopedia"></td>
+														<td>
+															<select name="input-label-1" data-repeater-id="input-label-1" class="input js-choice">
+																<option value="0" disabled>Pilih Label</option>
+																<option value="1">Buka Lapak</option>
+																<option value="2" selected>Tokopedia</option>
+															</select>
+														</td>
 														<td><input type="text" id="recommendation-other-link-1" class="input" name="acf[other-link]" placeholder="Link" value="http://tokopedia.com/s/1234"></td>
 														<td><a href="#" class="form-repeater-remove button button-gray" title="Delete Row">-</a></td>
 													</tr>
 													<tr class="repeater">
+														<td class="handle"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-handle" /></svg></td>
 														<td><img src="http://placehold.it/64x64/eeeeee/111111"></td>
-														<td><input type="text" id="recommendation-other-name-2" class="input" name="acf[other-name]" placeholder="Nama" value="Buka Lapak"></td>
+														<td>
+															<select name="input-label-1" data-repeater-id="input-label-1" class="input js-choice">
+																<option value="0" disabled>Pilih Label</option>
+																<option value="1" selected>Buka Lapak</option>
+																<option value="2">Tokopedia</option>
+															</select>
+														</td>
 														<td><input type="text" id="recommendation-other-link-2" class="input" name="acf[other-link]" placeholder="Link" value="http://bukalapak.com/s/1234"></td>
 														<td><a href="#" class="form-repeater-remove button button-gray" title="Delete Row">-</a></td>
 													</tr>
