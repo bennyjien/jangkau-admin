@@ -44,7 +44,20 @@
 											</div>
 										</div>
 										<div class="form-input js-form-input">
-											<p class="form-input-heading">Lokasi <a href="#" class="small">Lihat peta</a></p>
+											<p class="form-input-heading">Lokasi <span class="small"><a href="#popup-location" class="js-toggle" data-toggle-area="#popup-location" data-toggle-keyclose="true">Lihat peta</a></span></p>
+											<div id="popup-location" class="popup-container">
+												<div class="popup-container-content">
+													<div class="popup-inline">
+														<div class="popup-inline-head">
+															<h4 class="heading">Peta Lokasi</h4>
+															<a href="#popup-location" class="close js-toggle"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-close" /></svg></a>
+														</div>
+														<div class="popup-inline-body">
+															<img src="http://placehold.it/800x600/eeeeee/111111">
+														</div>
+													</div>
+												</div>
+											</div>
 											<div class="form-input-fields">
 												<div class="form-input-field is-required">
 													<p class="placeholder">Latitude</p>

@@ -1,7 +1,7 @@
 /* This file contains main script for website
  * Style related scripts is located in style.js
  */
-/* global document */
+/* global document jQuery */
 
 // init Choices
 const $choice = document.querySelectorAll('.js-choice');
@@ -14,7 +14,3 @@ if ($choice.length) {
 		}
 	});
 }
-
-// jQuery(document).ready(function($) {
-// 	$('.js-select2').select2({ width: '100%' });
-// });
