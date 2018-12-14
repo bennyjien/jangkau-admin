@@ -9,7 +9,7 @@
 						<div class="admin-page-container">
 							<header class="admin-page-header">
 								<div class="page-breadcrumb">
-									<p class="breadcrumb"><span class="parent">Admin Area</span> / <span class="parent"><a href="admin-donation.html" class="link">Sumbangan</a></span> / <span class="current">Andy Kusuma</span></p>
+									<p class="breadcrumb"><span class="parent">Admin Area</span> / <span class="parent"><a href="admin-donation.html" class="link">Sumbangan</a></span> / <span class="current">#SU781</span></p>
 								</div>
 								<div class="avatar-nav">
 									<div class="avatar-nav-link">
@@ -29,12 +29,16 @@
 							</header>
 							<div class="admin-page-content">
 								<section class="section">
-									<h1 class="page-title">Andy Kusuma</h1>
+									<h1 class="page-title">#SU781</h1>
 									<form class="form">
 										<div class="form-input js-form-input">
-											<label for="input-name" class="form-input-heading">Nama</label>
-											<div class="form-input-field is-required">
-												<input type="text" id="input-name" class="input" value="Andy Kusuma" placeholder="Enter your name">
+											<label for="input-name" class="form-input-heading">User</label>
+											<div class="form-input-select form-input-field is-required">
+												<select name="input-name" id="input-name" class="input js-choice">
+													<option value="1" selected>Andy Kusuma</option>
+													<option value="2">Bola Lampu</option>
+													<option value="3">Canda Tawa</option>
+												</select>
 											</div>
 										</div>
 										<div class="form-input js-form-input">
@@ -48,7 +52,7 @@
 											<div class="form-input-fields">
 												<div class="form-input-select form-input-field is-required">
 													<p class="placeholder">Produk</p>
-													<select name="input-donation" id="input-role" class="input">
+													<select name="input-donation" id="input-role" class="input js-choice">
 														<option value="" disabled>Select role</option>
 														<option value="1" selected>Kursi Roda</option>
 														<option value="2">Kasur</option>
@@ -59,6 +63,30 @@
 													<p class="placeholder">Jumlah</p>
 													<input type="text" class="input" value="2" placeholder="Jumlah">
 												</div>
+											</div>
+										</div>
+										<div class="form-group">
+											<div class="form-group-item">
+												<div class="form-input js-form-input">
+													<label for="input-recipient-name" class="form-input-heading">Diterima oleh</label>
+													<div class="form-input-field">
+														<input type="text" id="input-recipient-name" class="input" value="Admin Dalan" placeholder="Name" readonly>
+													</div>
+												</div>
+											</div>
+											<div class="form-group-item">
+												<div class="form-input js-form-input">
+													<label for="input-recipient-warehouse" class="form-input-heading">Diterima di</label>
+													<div class="form-input-field">
+														<input type="text" id="input-recipient-warehouse" class="input" value="Jangkau Help Center" placeholder="Name" readonly>
+													</div>
+												</div>
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<label for="input-note" class="form-input-heading">Catatan</label>
+											<div class="form-input-field">
+												<textarea type="text" id="input-note" class="input"></textarea>
 											</div>
 										</div>
 										<div class="form-input js-form-input">
