@@ -1,0 +1,4 @@
+12.14
+- header: <meta name="viewport" content="width=1152">
+- admin-donation-single.html: update contoh HTML
+- style.css: *UPDATE*

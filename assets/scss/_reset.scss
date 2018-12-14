@@ -306,6 +306,14 @@ textarea {
 		box-shadow: none;
 		outline: 0;
 	}
+
+	&[readonly] {
+		color: $color-text-light;
+
+		&:focus {
+			border-color: $color-border;
+		}
+	}
 }
 
 textarea {

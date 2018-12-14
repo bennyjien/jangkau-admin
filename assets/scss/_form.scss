@@ -120,6 +120,7 @@
 				position: absolute;
 				top: 14px;
 				transform-origin: left top;
+				z-index: 2;
 
 				+ .input {
 					padding: 21px 24px 5px 8px;

@@ -481,9 +481,11 @@
 				});
 
 				window.addEventListener('load', function() {
-					input.parentNode.classList.add('is-loaded');
+					const parent = input.closest('.form-input-field');
+
+					parent.classList.add('is-loaded');
 					if (input.value) {
-						input.parentNode.classList.add('is-filled');
+						parent.classList.add('is-filled');
 					}
 				});
 			});

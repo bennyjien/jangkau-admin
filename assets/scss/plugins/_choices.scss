@@ -1,3 +1,4 @@
+
 /*===============================
 =            Choices            =
 ===============================*/
@@ -70,26 +71,17 @@
 
 .choices[data-type*="select-one"]:after {
   content: "";
-  height: 0;
-  width: 0;
-  border-style: solid;
-  border-color: #333333 transparent transparent transparent;
-  border-width: 5px;
+  background-image: url(data:image/svg+xml;base64,PHN2ZyBoZWlnaHQ9IjI0IiB2aWV3Qm94PSIwIDAgMjQgMjQiIHdpZHRoPSIyNCIgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIj48cGF0aCBmaWxsPSIjOEY4RjhGIiBkPSJtNy40MSA3Ljg0IDQuNTkgNC41OCA0LjU5LTQuNTggMS40MSAxLjQxLTYgNi02LTZ6Ii8+PC9zdmc+);
+	background-position: 100% center;
+	background-position: calc(100% - 4px) center;
+	background-repeat: no-repeat;
+  height: 24px;
+  width: 24px;
   position: absolute;
-  right: 11.5px;
+  right: 0;
   top: 50%;
-  margin-top: -2.5px;
+  margin-top: -12px;
   pointer-events: none;
-}
-
-.choices[data-type*="select-one"].is-open:after {
-  border-color: transparent transparent #333333 transparent;
-  margin-top: -7.5px;
-}
-
-.choices[data-type*="select-one"][dir="rtl"]:after {
-  left: 11.5px;
-  right: auto;
 }
 
 .choices[data-type*="select-one"][dir="rtl"] .choices__button {
@@ -130,7 +122,7 @@
 
 .choices__inner {
   display: inline-block;
-  vertical-align: top;
+  vertical-align: bottom;
   width: 100%;
   background-color: $white;
   padding: 4px 8px;
@@ -161,7 +153,7 @@
 
 .choices__list--single {
   display: inline-block;
-  padding: 4px 16px 4px 4px;
+  padding: 4px 16px 4px 0;
   width: 100%;
 }
 
@@ -362,3 +354,14 @@
 }
 
 /*=====  End of Choices  ======*/
+
+.placeholder {
+
+  + .choices {
+
+    .choices__inner {
+      padding-bottom: 1px;
+      padding-top: 17px;
+    }
+  }
+}
