@@ -1,3 +1,9 @@
+12.17
+- admin-request-single.html: tambahan modul datepicker pada .form-input-date
+- vendor.js: *UPDATE*
+- bundle.js: *UPDATE*
+- style.css: *UPDATE*
+
 12.14
 - header: <meta name="viewport" content="width=1152">
 - admin-donation-single.html: update contoh HTML

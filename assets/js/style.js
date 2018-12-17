@@ -483,11 +483,23 @@
 				window.addEventListener('load', function() {
 					const parent = input.closest('.form-input-field');
 
-					parent.classList.add('is-loaded');
-					if (input.value) {
-						parent.classList.add('is-filled');
+					if (parent) {
+						parent.classList.add('is-loaded');
+						if (input.value) {
+							parent.classList.add('is-filled');
+						}
 					}
 				});
+
+				// pikaday support
+				const $inputDate = element.querySelector('.form-input-date');
+
+				if ($inputDate) {
+					new Pikaday({
+						field: $inputDate.querySelector('.input'),
+						format: 'DD[/]MM[/]YYYY'
+					});
+				}
 			});
 
 		});
@@ -621,6 +633,7 @@
 						});
 					});
 				}
+				// end
 
 				repeaterCurrent+=1;
 			} else {
