@@ -45,6 +45,7 @@
 	box-shadow: $box-shadow-500;
 	max-width: 640px;
 	position: fixed;
+	width: 100%;
 	z-index: 9;
 
 	@at-root {
@@ -73,6 +74,39 @@
 
 		.popup-inline-body {
 			padding: 40px;
+		}
+	}
+}
+
+.popup-media {
+	background-color: $white;
+	border: 1px solid $color-border;
+	border-radius: 3px;
+	box-shadow: $box-shadow-500;
+	max-width: 640px;
+	position: fixed;
+	width: 100%;
+	z-index: 9;
+
+	@at-root {
+		.popup-media-head {
+			position: relative;
+
+			.close {
+				color: $color-400;
+				position: absolute;
+				right: 0;
+				top: 0;
+
+				.icon {
+					height: 24px;
+					width: 24px;
+				}
+			}
+		}
+
+		.popup-media-body {
+			padding: 24px;
 		}
 	}
 }

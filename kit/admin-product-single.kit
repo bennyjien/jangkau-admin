@@ -29,12 +29,33 @@
 							</header>
 							<div class="admin-page-content">
 								<section class="section">
-									<h1 class="page-title">Kursi Roda</h1>
+									<h1 class="page-title">Kursi Roda (#PB5368132)</h1>
 									<form action="">
+										<div class="form-input js-form-input">
+											<label for="input-name" class="form-input-heading">Kode Produk</label>
+											<div class="form-input-field is-required">
+												<input type="text" id="input-name" class="input" value="KR" placeholder="Masukkan Nama Produk">
+											</div>
+											<p class="form-input-caption">Max. 3 karakter</p>
+										</div>
 										<div class="form-input js-form-input">
 											<label for="input-name" class="form-input-heading">Nama Produk</label>
 											<div class="form-input-field is-required">
 												<input type="text" id="input-name" class="input" value="Kursi Roda" placeholder="Masukkan Nama Produk">
+											</div>
+											<p class="form-input-caption">Pastikan nama produk belum pernah diinput sebelumnya</p>
+										</div>
+										<div class="form-input js-form-input">
+											<p class="form-input-heading">Poin Reward</p>
+											<div class="form-input-fields">
+												<div class="form-input-field">
+													<p class="placeholder">Produk Baru</p>
+													<input type="text" id="input-condition-new" class="input" value="20">
+												</div>
+												<div class="form-input-field">
+													<p class="placeholder">Produk Bekas</p>
+													<input type="text" id="input-condition-second" class="input" value="15">
+												</div>
 											</div>
 										</div>
 										<div class="form-group">
@@ -48,7 +69,7 @@
 															</div>
 														</div>
 														<div class="form-media-input">
-															<a href="#" class="button button-small">Change Photo</a>
+															<a href="#popup-media-library" class="button button-small js-toggle" data-toggle-area="#popup-media-library" data-toggle-keyclose="true">Change Photo</a>
 															<p class="form-media-caption">Ukuran optimal 320x320, maksimal 200 kb.</p>
 														</div>
 													</div>
@@ -64,7 +85,7 @@
 															</div>
 														</div>
 														<div class="form-media-input">
-															<a href="#" class="button button-small">Upload Photo</a>
+															<a href="#popup-media-library" class="button button-small js-toggle" data-toggle-area="#popup-media-library" data-toggle-keyclose="true">Upload Photo</a>
 															<p class="form-media-caption">Ukuran optimal 320x320, maksimal 200 kb.</p>
 														</div>
 													</div>
@@ -79,24 +100,28 @@
 														<tr>
 															<th class="th">ID</th>
 															<th class="th">Nama</th>
-															<th class="th">Stok</th>
+															<th class="th">Stok Baru</th>
+															<th class="th">Stok Bekas</th>
 														</tr>
 													</thead>
 													<tbody>
 														<tr>
 															<td class="strong">#JC001</td>
 															<td>Jangkau Help Center</td>
-															<td><input class="input" type="text" value="6" placeholder="Stok"></td>
+															<td><input class="input" type="text" value="6" placeholder="Jumlah Stok"></td>
+															<td><input class="input" type="text" value="6" placeholder="Jumlah Stok"></td>
 														</tr>
 														<tr>
 															<td class="strong">#JC002</td>
 															<td>Abbalove Center</td>
-															<td><input class="input" type="text" value="4" placeholder="Stok"></td>
+															<td><input class="input" type="text" value="4" placeholder="Jumlah Stok"></td>
+															<td><input class="input" type="text" value="4" placeholder="Jumlah Stok"></td>
 														</tr>
 														<tr>
 															<td class="strong">#JC003</td>
 															<td>ICUBIC Center</td>
-															<td><input class="input" type="text" value="8" placeholder="Stok"></td>
+															<td><input class="input" type="text" value="8" placeholder="Jumlah Stok"></td>
+															<td><input class="input" type="text" value="8" placeholder="Jumlah Stok"></td>
 														</tr>
 													</tbody>
 												</table>
@@ -194,7 +219,7 @@
 											<p class="form-repeater-alert">Maksimal 5 baris</p>
 										</fieldset>
 										<div class="form-submit">
-											<button class="button button-full">Simpan</button>
+											<button class="button button-full">Simpan Perubahan</button>
 										</div>
 									</form>
 								</section>
@@ -202,6 +227,18 @@
 							<footer class="admin-page-footer">
 								<p class="attribution">Developed by <a href="http://icubic.co.id" class="link">ICUBIC</a></p>
 							</footer>
+							<div id="popup-media-library" class="popup-container">
+								<div class="popup-container-content">
+									<div class="popup-media">
+										<div class="popup-media-head">
+											<a href="#popup-media-library" class="close js-toggle"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-close" /></svg></a>
+										</div>
+										<div class="popup-media-body">
+											<div class="uploader js-uploader"></div>
+										</div>
+									</div>
+								</div>
+							</div>
 						</div>
 					</div>
 

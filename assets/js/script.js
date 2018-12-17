@@ -14,3 +14,14 @@ if ($choice.length) {
 		}
 	});
 }
+
+// initialize Fine Uploader
+var $uploader = document.querySelectorAll('.js-uploader');
+
+if ($uploader.length) {
+	$uploader.forEach(el => {
+		new qq.FineUploader({
+			element: el
+		});
+	})
+}

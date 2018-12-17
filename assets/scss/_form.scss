@@ -340,6 +340,21 @@
 			width: 64px;
 		}
 
+		.form-media-input {
+
+			.button {
+				background-color: transparent;
+				border-color: $color-one-500;
+				color: $color-one-500;
+
+				&:hover,
+				&:focus {
+					border-color: $color-one-600;
+					color: $color-one-600;
+				}
+			}
+		}
+
 		.form-media-caption {
 			@include font-size-200;
 			color: $color-text-light;
