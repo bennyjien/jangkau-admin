@@ -25,6 +25,11 @@
 	}
 
 	@at-root {
+		.form-group-heading {
+			flex: 0 0 100%;
+			padding: 0 8px;
+		}
+
 		.form-group-item {
 			margin-bottom: 0;
 			padding: 8px 8px;

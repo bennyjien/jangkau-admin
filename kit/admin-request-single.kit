@@ -33,6 +33,15 @@
 									<form action="">
 										<div class="form-input js-form-input">
 											<label for="input-name" class="form-input-heading">Nama Pemohon</label>
+											<div class="form-input-select form-input-field is-required">
+												<select type="text" id="input-name" class="input js-choice" value="Almaida Senopati" placeholder="Masukkan Nama Pemohon">
+													<option value="Abu">Abu</option>
+													<option value="Deny" selected>Deny</option>
+												</select>
+											</div>
+										</div>
+										<div class="form-input js-form-input">
+											<label for="input-name" class="form-input-heading">Nama Penerima Sumbangan</label>
 											<div class="form-input-field is-required">
 												<input type="text" id="input-name" class="input" value="Almaida Senopati" placeholder="Masukkan Nama Pemohon">
 											</div>
@@ -70,24 +79,132 @@
 												<textarea type="text" id="input-address" class="input" placeholder="Masukkan Alamat Center">Jl. Padi Kapas No. 82&#013;Dusun Rawa Tengah RT01/RW02&#013;Blitar, Jawa Timur 15221</textarea>
 											</div>
 										</div>
+										<fieldset class="form-repeater js-form-repeater" data-repeater-max="5">
+											<legend class="legend">Permohonan</legend>
+											<table class="table">
+												<thead>
+													<tr>
+														<th class="th" width="48px"></th>
+														<th class="th">Produk</th>
+														<th class="th"><a href="#" class="form-repeater-add button" title="Add Row">+</a></th>
+													</tr>
+												</thead>
+												<tbody class="repeaters">
+													<tr class="repeater repeater-source">
+														<td class="handle"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-handle" /></svg></td>
+														<td>
+															<select name="input-label-{timestamp}" data-repeater-id="input-label-{timestamp}" class="input js-choice">
+																<option value="0" disabled selected>Pilih Permohonan</option>
+																<option value="1">Kursi Roda (#PB5368132)</option>
+																<option value="2">Kasur (#PB5236242)</option>
+																<option value="3">Tongkat Jalan (#PB2352233)</option>
+															</select>
+														</td>
+														<td><a href="#" class="form-repeater-remove button button-gray" title="Delete Row">-</a></td>
+													</tr>
+													<tr class="repeater">
+														<td class="handle"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-handle" /></svg></td>
+														<td>
+															<select name="input-label-1" data-repeater-id="input-label-1" class="input js-choice">
+																<option value="0" disabled>Pilih Permohonan</option>
+																<option value="1" selected>Kursi Roda (#PB5368132)</option>
+																<option value="2">Kasur (#PB5236242)</option>
+																<option value="3">Tongkat Jalan (#PB2352233)</option>
+															</select>
+														</td>
+														<td><a href="#" class="form-repeater-remove button button-gray" title="Delete Row">-</a></td>
+													</tr>
+												</tbody>
+											</table>
+											<p class="form-repeater-alert">Maksimal 5 baris</p>
+										</fieldset>
 										<div class="form-input js-form-input">
 											<label for="input-note" class="form-input-heading">Catatan</label>
 											<div class="form-input-field">
 												<textarea type="text" id="input-note" class="input" placeholder="Catatan lainnya"></textarea>
 											</div>
 										</div>
+										<div class="form-group">
+											<div class="form-group-item">
+												<div class="form-input js-form-input">
+													<label for="input-status" class="form-input-heading">Status</label>
+													<div class="form-input-select form-input-field is-required">
+														<select name="input-status" id="input-status" class="input">
+															<option value="" disabled>Select status</option>
+															<option value="1" selected>Menunggu verifikasi</option>
+															<option value="2">Proses verifikasi</option>
+															<option value="3">Ditolak</option>
+															<option value="4">Mencari sumbangan</option>
+															<option value="5">Mengirim sumbangan</option>
+															<option value="6">Tersumbang</option>
+														</select>
+													</div>
+												</div>
+											</div>
+											<div class="form-group-item">
+												<div class="form-input js-form-input">
+													<label for="input-status" class="form-input-heading">Verifikator</label>
+													<div class="form-input-select form-input-field is-required">
+														<select name="input-status" id="input-status" class="input js-choice">
+															<option value="" disabled>Select verifikator</option>
+															<option value="1" selected>Admin Danang</option>
+															<option value="2">Admin Danil</option>
+														</select>
+													</div>
+												</div>
+											</div>
+										</div>
 										<div class="form-input js-form-input">
-											<label for="input-status" class="form-input-heading">Status</label>
-											<div class="form-input-select form-input-field is-required">
-												<select name="input-status" id="input-status" class="input">
-													<option value="" disabled>Select status</option>
-													<option value="1" selected>Menunggu verifikasi</option>
-													<option value="2">Proses verifikasi</option>
-													<option value="3">Ditolak</option>
-													<option value="4">Mencari sumbangan</option>
-													<option value="5">Mengirim sumbangan</option>
-													<option value="6">Tersumbang</option>
-												</select>
+											<p class="form-input-heading">Questionnaire Lists</p>
+											<div class="form-input-table">
+												<table class="table">
+													<thead>
+														<tr>
+															<th class="th">ID</th>
+															<th class="th">Pertanyaan</th>
+															<th class="th">Feedback</th>
+															<th class="th"></th>
+														</tr>
+													</thead>
+													<tbody>
+														<tr>
+															<td class="strong">#1</td>
+															<td>Kriteria nya pasti benar sakit dan sudah tidak bisa jalan lagi</td>
+															<td>Belum ada feedback</td>
+															<td><a href="#" class="link">Detail</a></td>
+														</tr>
+														<tr>
+															<td class="strong">#2</td>
+															<td>Diutamakan yg lansia / berumur</td>
+															<td>Belum ada feedback</td>
+															<td><a href="#" class="link">Detail</a></td>
+														</tr>
+														<tr>
+															<td class="strong">#3</td>
+															<td>Belum pernah menerima bantuan dr btp foundation / yayasan lainnya sebelumnya</td>
+															<td>Belum ada feedback</td>
+															<td><a href="#" class="link">Detail</a></td>
+														</tr>
+														<tr>
+															<td class="strong">#4</td>
+															<td>Keadaan yg membutuhkan dan keluarga nya tidak mampu</td>
+															<td>Belum ada feedback</td>
+															<td><a href="#" class="link">Detail</a></td>
+														</tr>
+														<tr>
+															<td class="strong">#5</td>
+															<td>Income kelurga UMR (sekitar 3.6 mio)</td>
+															<td>Belum ada feedback</td>
+															<td><a href="#" class="link">Detail</a></td>
+														</tr>
+														<tr>
+															<td class="strong">#6</td>
+															<td>Keabsahan KTP dan KK</td>
+															<td>Belum ada feedback</td>
+															<td><a href="#" class="link">Detail</a></td>
+														</tr>
+													</tbody>
+												</table>
 											</div>
 										</div>
 										<div class="form-submit">

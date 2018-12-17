@@ -1,3 +1,8 @@
+12.17c
+- admin-donation-single.html: update contoh HTML
+- admin-request-single.html: update contoh HTML
+- style.css: *UPDATE*
+
 12.17b
 - header: markup HTML fine-uploader
 - admin-product-single.html: tambahan media uploader pada #popup-media-library
