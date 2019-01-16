@@ -78,7 +78,7 @@
 	}
 }
 
-.popup-media {
+.popup-gallery {
 	background-color: $white;
 	border: 1px solid $color-border;
 	border-radius: 3px;
@@ -89,14 +89,14 @@
 	z-index: 9;
 
 	@at-root {
-		.popup-media-head {
+		.popup-gallery-head {
 			position: relative;
 
 			.close {
 				color: $color-400;
 				position: absolute;
-				right: 0;
-				top: 0;
+				right: 4px;
+				top: 4px;
 
 				.icon {
 					height: 24px;
@@ -105,8 +105,8 @@
 			}
 		}
 
-		.popup-media-body {
-			padding: 24px;
+		.popup-gallery-body {
+			padding: 32px;
 		}
 	}
 }
