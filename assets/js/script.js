@@ -25,3 +25,14 @@ if ($uploader.length) {
 		});
 	})
 }
+
+jQuery(document).ready(function($) {
+
+	// initialize magnificPopup
+	$('.js-popup-link').magnificPopup({
+		type: 'inline',
+		mainClass: 'mfp-animation',
+		removalDelay: 200
+	});
+
+});
