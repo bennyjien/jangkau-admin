@@ -1,3 +1,10 @@
+02.08
+- penambahan .form-fieldset (contoh di admin-request-single.html)
+- penambahan .tooltip dan .tooltip-small (contoh di admin-request-single.html)
+- penambahan .admin-table-filter (contoh di admin-request.html)
+- assets/images/: *UPDATE*
+- style.css: *UPDATE*
+
 12.17c
 - admin-donation-single.html: update contoh HTML
 - admin-request-single.html: update contoh HTML

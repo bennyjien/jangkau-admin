@@ -54,12 +54,20 @@
 		.admin-table-head {
 			align-items: center;
 			display: flex;
-			justify-content: space-between;
 			margin-bottom: 24px;
 		}
 
+		.admin-table-action {
+			flex: 1 1 0;
+		}
+
+		.admin-table-filter {
+			flex: 0 1 auto;
+			margin-right: 16px;
+		}
+
 		.admin-table-search {
-			flex: 0 1 50%;
+			flex: 0 1 40%;
 			margin-left: auto;
 		}
 

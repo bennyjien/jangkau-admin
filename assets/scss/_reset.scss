@@ -229,7 +229,7 @@ hr {
 	background-color: rgba($black, 0.1);
 	border: 0;
 	height: 2px;
-	margin: 24px 0;
+	margin: 32px 0;
 	width: 100%;
 }
 
@@ -328,7 +328,7 @@ select {
 	background-position: 100% center;
 	background-position: calc(100% - 4px) center;
 	background-repeat: no-repeat;
-	padding: 7px 24px 7px 8px;
+	padding: 8px 24px 8px 8px;
 
 	&[multiple],
 	&[size] {

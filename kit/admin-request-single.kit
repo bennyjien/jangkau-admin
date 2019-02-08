@@ -29,56 +29,61 @@
 							</header>
 							<div class="admin-page-content">
 								<section class="section">
-									<h1 class="page-title">Almaida Senopati</h1>
+									<h1 class="page-title">#PM6083037</h1>
 									<form action="">
-										<div class="form-input js-form-input">
-											<label for="input-name" class="form-input-heading">Nama Pemohon</label>
-											<div class="form-input-select form-input-field is-required">
-												<select type="text" id="input-name" class="input js-choice" value="Almaida Senopati" placeholder="Masukkan Nama Pemohon">
-													<option value="Abu">Abu</option>
-													<option value="Deny" selected>Deny</option>
-												</select>
-											</div>
-										</div>
-										<div class="form-input js-form-input">
-											<label for="input-name" class="form-input-heading">Nama Penerima Sumbangan</label>
-											<div class="form-input-field is-required">
-												<input type="text" id="input-name" class="input" value="Almaida Senopati" placeholder="Masukkan Nama Pemohon">
-											</div>
-										</div>
-										<div class="form-group">
-											<div class="form-group-item">
+										<fieldset class="form-fieldset">
+											<legend class="form-fieldset-legend">Data Pemohon</legend>
+											<div class="form-fieldset-body">
 												<div class="form-input js-form-input">
-													<label for="input-role" class="form-input-heading">Tempat Lahir</label>
+													<label for="input-name" class="form-input-heading">Nama Pemohon</label>
+													<div class="form-input-select form-input-field is-required">
+														<select type="text" id="input-name" class="input js-choice" value="Almaida Senopati" placeholder="Masukkan Nama Pemohon">
+															<option value="Abu">Abu</option>
+															<option value="Deny" selected>Deny</option>
+														</select>
+													</div>
+												</div>
+												<div class="form-input js-form-input">
+													<label for="input-name" class="form-input-heading">Nama Penerima Sumbangan</label>
 													<div class="form-input-field is-required">
-														<input type="text" class="input" value="Dusun Rawa Tengah" placeholder="Masukkan Tempat Lahir">
+														<input type="text" id="input-name" class="input" value="Almaida Senopati" placeholder="Masukkan Nama Pemohon">
 													</div>
 												</div>
-											</div>
-											<div class="form-group-item">
+												<div class="form-group">
+													<div class="form-group-item">
+														<div class="form-input js-form-input">
+															<label for="input-role" class="form-input-heading">Tempat Lahir</label>
+															<div class="form-input-field is-required">
+																<input type="text" class="input" value="Dusun Rawa Tengah" placeholder="Masukkan Tempat Lahir">
+															</div>
+														</div>
+													</div>
+													<div class="form-group-item">
+														<div class="form-input js-form-input">
+															<label for="input-role" class="form-input-heading">Tanggal Lahir</label>
+															<div class="form-input-date form-input-field is-required">
+																<input type="text" class="input" value="31/10/1946" placeholder="DD/MM/YYYY">
+															</div>
+														</div>
+													</div>
+												</div>
 												<div class="form-input js-form-input">
-													<label for="input-role" class="form-input-heading">Tanggal Lahir</label>
-													<div class="form-input-date form-input-field is-required">
-														<input type="text" class="input" value="31/10/1946" placeholder="DD/MM/YYYY">
+													<label for="input-phone" class="form-input-heading">Telepon</label>
+													<div class="form-input-phone form-input-field is-required">
+														<div class="inputs">
+															<input type="text" id="input-phone-area" class="input input-area" value="+62" placeholder="+62" readonly>
+															<input type="text" id="input-phone-number" class="input input-number" value="81234889900" placeholder="Enter your phone">
+														</div>
+													</div>
+												</div>
+												<div class="form-input js-form-input">
+													<label for="input-address" class="form-input-heading">Alamat Lengkap</label>
+													<div class="form-input-field is-required">
+														<textarea type="text" id="input-address" class="input" placeholder="Masukkan Alamat Center">Jl. Padi Kapas No. 82&#013;Dusun Rawa Tengah RT01/RW02&#013;Blitar, Jawa Timur 15221</textarea>
 													</div>
 												</div>
 											</div>
-										</div>
-										<div class="form-input js-form-input">
-											<label for="input-phone" class="form-input-heading">Telepon</label>
-											<div class="form-input-phone form-input-field is-required">
-												<div class="inputs">
-													<input type="text" id="input-phone-area" class="input input-area" value="+62" placeholder="+62" readonly>
-													<input type="text" id="input-phone-number" class="input input-number" value="81234889900" placeholder="Enter your phone">
-												</div>
-											</div>
-										</div>
-										<div class="form-input js-form-input">
-											<label for="input-address" class="form-input-heading">Alamat Lengkap</label>
-											<div class="form-input-field is-required">
-												<textarea type="text" id="input-address" class="input" placeholder="Masukkan Alamat Center">Jl. Padi Kapas No. 82&#013;Dusun Rawa Tengah RT01/RW02&#013;Blitar, Jawa Timur 15221</textarea>
-											</div>
-										</div>
+										</fieldset>
 										<fieldset class="form-repeater js-form-repeater" data-repeater-max="5">
 											<legend class="legend">Permohonan</legend>
 											<table class="table">
@@ -127,7 +132,7 @@
 										<div class="form-group">
 											<div class="form-group-item">
 												<div class="form-input js-form-input">
-													<label for="input-status" class="form-input-heading">Status</label>
+													<label for="input-status" class="form-input-heading">Status <span class="tooltip" data-tooltip="1. Menunggu Verifikasi: Admin menetapkan Verifier untuk melakukan verifikasi &#10; 2. Proses Verifikasi: Verifier sedang dalam proses verifikasi &#10; 3. Menunggu donasi: Admin menyetujui permohonan & Verified akan mendapat poin"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-info" /></svg></span></label>
 													<div class="form-input-select form-input-field is-required">
 														<select name="input-status" id="input-status" class="input">
 															<option value="" disabled>Select status</option>
@@ -143,7 +148,7 @@
 											</div>
 											<div class="form-group-item">
 												<div class="form-input js-form-input">
-													<label for="input-status" class="form-input-heading">Verifikator</label>
+													<label for="input-status" class="form-input-heading">Verifikator <span class="tooltip tooltip-small" data-tooltip="Siapa kamu?"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-info" /></svg></span></label>
 													<div class="form-input-select form-input-field is-required">
 														<select name="input-status" id="input-status" class="input js-choice">
 															<option value="" disabled>Select verifikator</option>
@@ -154,6 +159,7 @@
 												</div>
 											</div>
 										</div>
+										<hr>
 										<div class="form-input js-form-input">
 											<p class="form-input-heading">Questionnaire Lists</p>
 											<div class="form-input-table">
