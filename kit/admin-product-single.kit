@@ -69,7 +69,7 @@
 															</div>
 														</div>
 														<div class="form-media-input">
-															<a href="#popup-media-library" class="button button-small js-toggle" data-toggle-area="#popup-media-library" data-toggle-keyclose="true">Change Photo</a>
+															<a href="#popup-media-library" class="button button-small js-popup-link">Change Photo</a>
 															<p class="form-media-caption">Ukuran optimal 320x320, maksimal 200 kb.</p>
 														</div>
 													</div>
@@ -85,7 +85,7 @@
 															</div>
 														</div>
 														<div class="form-media-input">
-															<a href="#popup-media-library" class="button button-small js-toggle" data-toggle-area="#popup-media-library" data-toggle-keyclose="true">Upload Photo</a>
+															<a href="#popup-media-library" class="button button-small js-popup-link">Upload Photo</a>
 															<p class="form-media-caption">Ukuran optimal 320x320, maksimal 200 kb.</p>
 														</div>
 													</div>
@@ -227,30 +227,27 @@
 							<footer class="admin-page-footer">
 								<p class="attribution">Developed by <a href="http://icubic.co.id" class="link">ICUBIC</a></p>
 							</footer>
-							<div id="popup-media-library" class="popup-container">
-								<div class="popup-container-content">
-									<div class="popup-gallery">
-										<div class="popup-gallery-head">
-											<a href="#popup-media-library" class="close js-toggle"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-close" /></svg></a>
+
+							<div id="popup-media-library" class="mfp-inline mfp-hide">
+								<div class="popup-inline">
+									<div class="popup-inline-head">
+										<h4 class="heading">Media Library</h4>
+										<div class="search">
+											<input type="text" class="input" placeholder="Search">
+											<button class="button">Go</button>
 										</div>
-										<div class="popup-gallery-body">
-											<div class="media-uploader">
-												<div class="media-uploader-head">
-													<h4 class="title">Icon Produk</h4>
-													<div class="search">
-														<input type="text" class="input" placeholder="Search">
-														<button class="button">Go</button>
-													</div>
-												</div>
-												<div class="media-uploader-area js-uploader"></div>
-												<div class="media-uploader-loader">
-													<a href="#" class="button button-gray">Load More</a>
-												</div>
+									</div>
+									<div class="popup-inline-body">
+										<div class="media-uploader">
+											<div class="media-uploader-area js-uploader"></div>
+											<div class="media-uploader-loader">
+												<a href="#" class="button button-gray">Load More</a>
 											</div>
 										</div>
 									</div>
 								</div>
 							</div>
+
 						</div>
 					</div>
 
