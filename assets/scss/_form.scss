@@ -255,8 +255,30 @@
 
 	@at-root {
 		.form-file-heading {
+			@include font-size-400;
 			display: block;
 			margin-bottom: 6px;
+
+			.small {
+				@include font-size-300;
+				color: $color-text-light;
+				display: block;
+			}
+		}
+
+		.form-file-image {
+			display: flex;
+			flex-wrap: wrap;
+
+			&:hover {
+
+				.form-file-preview {
+
+					.remove {
+						opacity: 1;
+					}
+				}
+			}
 		}
 
 		.form-file-input {
@@ -328,6 +350,61 @@
 				&:focus {
 					color: $color-alert-800;
 					text-decoration: none;
+				}
+			}
+		}
+
+		.form-file-preview {
+			margin-right: 8px;
+			position: relative;
+			width: 64px;
+
+			.remove {
+				background-color: $color-500;
+				display: block;
+				height: 16px;
+				opacity: 0;
+				position: absolute;
+				right: 0;
+				top: 0;
+				transition: all 0.2s ease-out;
+				width: 16px;
+
+				&:hover,
+				&:focus {
+					background-color: $color-alert-500;
+				}
+
+				.icon {
+					color: $white;
+					height: 100%;
+					display: block;
+					width: 100%;
+				}
+			}
+
+			.upload {
+				@include font-size-200;
+				align-items: center;
+				background-color: $color-200;
+				color: $color-500;
+				display: flex;
+				flex-direction: column;
+				height: 64px;
+				justify-content: center;
+				text-align: center;
+				transition: all 0.2s ease-out;
+				width: 64px;
+
+				&:hover,
+				&:focus {
+					background-color: $color-300;
+					color: $color-one-500;
+				}
+
+				.icon {
+					height: 24px;
+					width: 24px;
 				}
 			}
 		}

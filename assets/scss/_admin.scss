@@ -192,3 +192,19 @@
 		}
 	}
 }
+
+.admin-switcher {
+	align-items: center;
+	background-color: $color-200;
+	border-radius: 4px;
+	display: flex;
+	justify-content: space-between;
+	margin-bottom: 24px;
+	padding: 12px;
+
+	@at-root {
+		.admin-switcher-desc {
+			padding: 0 4px;
+		}
+	}
+}

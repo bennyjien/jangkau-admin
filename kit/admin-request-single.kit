@@ -90,6 +90,7 @@
 												<thead>
 													<tr>
 														<th class="th" width="48px"></th>
+														<th>Gambar</th>
 														<th class="th">Produk</th>
 														<th class="th"><a href="#" class="form-repeater-add button" title="Add Row">+</a></th>
 													</tr>
@@ -97,6 +98,16 @@
 												<tbody class="repeaters">
 													<tr class="repeater repeater-source">
 														<td class="handle"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-handle" /></svg></td>
+														<td>
+															<div class="form-file">
+																<div class="form-file-image">
+																	<div class="form-file-preview">
+																		<a href="#" class="edit"><img class="thumbnail" src="http://placehold.it/320x320/eeeeee/111111"></a>
+																		<a href="#" class="remove"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-close" /></svg></a>
+																	</div>
+																</div>
+															</div>
+														</td>
 														<td>
 															<select name="input-label-{timestamp}" data-repeater-id="input-label-{timestamp}" class="input js-choice">
 																<option value="0" disabled selected>Pilih Permohonan</option>
@@ -109,6 +120,16 @@
 													</tr>
 													<tr class="repeater">
 														<td class="handle"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-handle" /></svg></td>
+														<td>
+															<div class="form-file">
+																<div class="form-file-image">
+																	<div class="form-file-preview">
+																		<a href="#" class="edit"><img class="thumbnail" src="http://placehold.it/320x320/eeeeee/111111"></a>
+																		<a href="#" class="remove"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-close" /></svg></a>
+																	</div>
+																</div>
+															</div>
+														</td>
 														<td>
 															<select name="input-label-1" data-repeater-id="input-label-1" class="input js-choice">
 																<option value="0" disabled>Pilih Permohonan</option>
@@ -123,6 +144,20 @@
 											</table>
 											<p class="form-repeater-alert">Maksimal 5 baris</p>
 										</fieldset>
+										<div class="form-file js-form-file">
+											<label class="form-file-heading">Upload Image</label>
+											<div class="form-file-image">
+												<div class="form-file-preview">
+													<a href="#" class="edit"><img class="thumbnail" src="http://placehold.it/320x320/eeeeee/111111"></a>
+													<a href="#" class="remove"><svg class="icon" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-close" /></svg></a>
+												</div>
+												<div class="form-file-input">
+													<input type="file" name="input-file-2" id="input-file-2" class="input" data-multiple-placeholder="{count} files selected" multiple>
+													<label class="label" for="input-file-2"><span class="button">Browse files</span> <span class="placeholder">No file selected&hellip;</span> <a href="#" class="remove" title="Remove attachment">&times;</a></label>
+													<p class="form-file-caption">Accepted file formats are jpeg, png, gif. Maximum file size is 3 MB.</p>
+												</div>
+											</div>
+										</div>
 										<div class="form-input js-form-input">
 											<label for="input-note" class="form-input-heading">Catatan</label>
 											<div class="form-input-field">
