@@ -146,7 +146,7 @@
 				font-weight: 400;
 				letter-spacing: 0.08em;
 				margin-bottom: 0;
-				padding: 8px 24px;
+				padding: 8px 36px 8px 24px;
 				position: relative;
 				text-transform: uppercase;
 
@@ -162,6 +162,19 @@
 					position: absolute;
 					top: 0;
 					width: 20px;
+				}
+
+				&.heading-new {
+
+					&:after {
+						content: "";
+						background-color: $color-alert-500;
+						border-radius: 4px;
+						display: inline-block;
+						height: 8px;
+						margin-left: 4px;
+						width: 8px;
+					}
 				}
 
 				&.is-toggled {
@@ -187,6 +200,20 @@
 				&.is-current {
 					background-color: rgba($white, 0.12);
 					font-weight: 700;
+				}
+
+				.count {
+					background-color: $color-alert-500;
+					border-radius: 9px;
+					color: $white;
+					display: inline-block;
+					font-size: $font-size-100;
+					font-weight: 400;
+					line-height: 10px;
+					min-width: 18px;
+					padding: 4px;
+					text-align: center;
+					vertical-align: middle;
 				}
 			}
 		}
