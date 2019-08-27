@@ -7,7 +7,7 @@ function getParameterByName(name, url) {
 	if (!url) {
 		url = window.location.href;
 	}
-	name = name.replace(/[\[\]]/g, '\\$&');
+	name = name.replace(/[[\]]/g, '\\$&');
 	var regex = new RegExp('[?&]' + name + '(=([^&#]*)|&|#|$)'),
 		results = regex.exec(url);
 	if (!results) return null;
@@ -35,7 +35,7 @@ if (window.Element && !Element.prototype.closest) {
 			el = this;
 		do {
 			i = matches.length;
-			while (--i >= 0 && matches.item(i) !== el) {};
+			while (--i >= 0 && matches.item(i) !== el) {}
 		} while ((i < 0) && (el = el.parentElement));
 		return el;
 	};
@@ -57,6 +57,15 @@ function mousePos(event) {
 		x: posX,
 		y: posY
 	};
+}
+
+// convert to camelCase
+function camelCase(str) {
+	return str.toLowerCase()
+		.replace( /[-_]+/g, ' ')
+		.replace( /[^\w\s]/g, '')
+		.replace( / (.)/g, function($1) { return $1.toUpperCase(); })
+		.replace( / /g, '' );
 }
 
 // equalling heights function

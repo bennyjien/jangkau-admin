@@ -1,0 +1,49 @@
+.stat-table {
+
+	@at-root {
+		.stat-table-head {
+			display: flex;
+			margin-bottom: 32px;
+		}
+
+		.stat-table-heading {
+			font-weight: 300;
+			margin-bottom: 0;
+		}
+
+		.stat-table-filter {
+			flex: 0 1 25%;
+			margin-left: auto;
+			padding-left: 32px;
+
+			.input {
+				width: 100%;
+			}
+		}
+
+		.stat-table-charts {
+			display: flex;
+
+			&:not(:last-child) {
+				margin-bottom: 32px;
+			}
+		}
+
+		.stat-table-chart {
+			border: 1px solid $color-border;
+			border-radius: 8px;
+			flex: 0 1 50%;
+			padding: 16px;
+
+			& + & {
+				margin-left: 24px;
+			}
+
+			.title {
+				@include font-size-h6;
+				color: $color-text-light;
+				text-transform: uppercase;
+			}
+		}
+	}
+}

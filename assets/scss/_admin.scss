@@ -71,6 +71,15 @@
 			margin-left: auto;
 		}
 
+		.admin-table-quickfilter {
+			flex: 0 1 25%;
+			margin-left: auto;
+
+			.input {
+				width: 100%;
+			}
+		}
+
 		.admin-table-body {
 
 			.small {
