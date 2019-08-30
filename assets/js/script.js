@@ -80,9 +80,11 @@ chart.forEach(el => {
 				data: {
 					labels: label,
 					datasets: [{
-						backgroundColor: chartColor,
+						backgroundColor: type === 'line' ? '#ff4d4f' : chartColor,
+						borderColor: type === 'line' ? '#ff4d4f' : chartColor,
 						borderWidth: 0,
-						data: value
+						data: value,
+						fill: false
 					}]
 				},
 				options: {

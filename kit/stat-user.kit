@@ -1,0 +1,81 @@
+<!-- @import variables -->
+<!-- $admin-toggle-items-stat: toggled -->
+<!-- $admin-nav-stat-user: link is-current -->
+<!-- @import header -->
+
+			<div id="site-content" class="site-content">
+				<div class="site-content-inner">
+					<div class="main-content" role="main">
+						<div class="admin-page-container">
+							<header class="admin-page-header">
+								<div class="page-breadcrumb">
+									<p class="breadcrumb"><span class="parent">Statistik</span> / <span class="current">User</span></p>
+								</div>
+								<div class="avatar-nav">
+									<div class="avatar-nav-link">
+										<a href="#avatar-nav-menu" class="link js-toggle"><span class="initial">AD</span></a>
+									</div>
+									<div id="avatar-nav-menu" class="avatar-nav-menu">
+										<ul class="items">
+											<li class="item">
+												<a class="link" href="user-account.html">Account</a>
+											</li>
+											<li class="item">
+												<a class="link" href="user-login.html">Logout</a>
+											</li>
+										</ul>
+									</div>
+								</div>
+							</header>
+							<div class="admin-page-content">
+								<section class="section">
+									<div class="stat-report">
+										<div class="stat-report-head">
+											<h1 class="stat-report-heading">User</h1>
+											<div class="stat-report-filter">
+												<select id="input-stat-filter" class="input">
+													<option>2018</option>
+													<option selected>2019</option>
+												</select>
+											</div>
+										</div>
+										<div class="stat-report-cards">
+											<div class="stat-report-card">
+												<div class="meta">
+													<p class="row label">Total User</p>
+													<p class="row date">Dec 2018 – Aug 2019</p>
+													<p class="row value">7.020</p>
+												</div>
+											</div>
+											<div class="stat-report-card">
+												<div class="meta">
+													<p class="row label">User Registration</p>
+													<p class="row date">Jan 2019 – Aug 2019</p>
+													<p class="row value">6.920</p>
+												</div>
+												<div class="summary summary-positive">
+													<p class="row"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-trending-up" /></svg> 6.920% <span class="value">(6.920)</span> from 2018</p>
+												</div>
+											</div>
+										</div>
+										<div class="stat-report-chart">
+											<h2 class="title">Monthly User Registration</h2>
+											<div class="chart">
+												<canvas id="chart-user-registration" class="js-chart" data-chart-type="line" width="600" height="200"></canvas>
+											</div>
+										</div>
+									</div>
+								</section>
+							</div>
+							<footer class="admin-page-footer">
+								<p class="attribution">Developed by <a href="http://icubic.co.id" class="link">ICUBIC</a></p>
+							</footer>
+						</div>
+					</div>
+
+					<!-- @import sidebar -->
+
+				</div>
+			</div>
+
+<!-- @import footer -->

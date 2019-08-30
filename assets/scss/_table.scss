@@ -87,6 +87,11 @@
 		display: block;
 		height: 16px;
 	}
+
+	.total {
+		color: $color-text-dark;
+		font-weight: 700;
+	}
 }
 
 .table-responsive {

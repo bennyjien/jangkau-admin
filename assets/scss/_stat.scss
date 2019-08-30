@@ -1,17 +1,17 @@
-.stat-table {
+.stat-report {
 
 	@at-root {
-		.stat-table-head {
+		.stat-report-head {
 			display: flex;
 			margin-bottom: 32px;
 		}
 
-		.stat-table-heading {
+		.stat-report-heading {
 			font-weight: 300;
 			margin-bottom: 0;
 		}
 
-		.stat-table-filter {
+		.stat-report-filter {
 			flex: 0 1 25%;
 			margin-left: auto;
 			padding-left: 32px;
@@ -21,7 +21,95 @@
 			}
 		}
 
-		.stat-table-charts {
+		.stat-report-cards {
+			display: flex;
+			margin-bottom: 32px;
+		}
+
+		.stat-report-card {
+			background-color: $white;
+			border: 1px solid $color-border;
+			border-radius: 4px;
+			flex: 0 1 50%;
+			overflow: hidden;
+
+			& + & {
+				margin-left: 24px;
+			}
+
+			.meta {
+				padding: 20px 16px 16px;
+
+				.row {
+					margin-bottom: 0;
+				}
+
+				.label {
+					@include font-size-h6;
+					color: $color-text-light;
+					font-weight: 700;
+					margin-bottom: 4px;
+					text-transform: uppercase;
+				}
+
+				.date {
+					@include font-size-400;
+					color: $color-text-light;
+					margin-bottom: 8px;
+				}
+
+				.value {
+					@include font-size-800;
+					color: $color-text-dark;
+					font-weight: 700;
+				}
+			}
+
+			.summary {
+				background-color: $color-100;
+				padding: 8px 16px;
+
+				&.summary-negative {
+					background-color: $color-alert-200;
+
+					.row {
+						color: $color-alert-600;
+
+						.icon {
+							fill: $color-alert-400;
+						}
+					}
+				}
+
+				&.summary-positive {
+					background-color: $color-success-200;
+
+					.row {
+						color: $color-success-600;
+
+						.icon {
+							fill: $color-success-400;
+						}
+					}
+				}
+
+				.row {
+					@include font-size-300;
+
+					.icon {
+						fill: $color-text-lighter;
+						height: 20px;
+						width: 20px;
+					}
+
+					.value {
+						font-weight: 700;
+					}
+				}
+			}
+		}
+
+		.stat-report-charts {
 			display: flex;
 
 			&:not(:last-child) {
@@ -29,7 +117,7 @@
 			}
 		}
 
-		.stat-table-chart {
+		.stat-report-chart {
 			border: 1px solid $color-border;
 			border-radius: 8px;
 			flex: 0 1 50%;

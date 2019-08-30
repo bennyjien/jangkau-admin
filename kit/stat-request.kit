@@ -1,6 +1,6 @@
 <!-- @import variables -->
 <!-- $admin-toggle-items-stat: toggled -->
-<!-- $admin-nav-stat-donation: link is-current -->
+<!-- $admin-nav-stat-request: link is-current -->
 <!-- @import header -->
 
 			<div id="site-content" class="site-content">
@@ -9,7 +9,7 @@
 						<div class="admin-page-container">
 							<header class="admin-page-header">
 								<div class="page-breadcrumb">
-									<p class="breadcrumb"><span class="parent">Statistik</span> / <span class="current">Donasi</span></p>
+									<p class="breadcrumb"><span class="parent">Statistik</span> / <span class="current">Permohonan</span></p>
 								</div>
 								<div class="avatar-nav">
 									<div class="avatar-nav-link">
@@ -31,7 +31,7 @@
 								<section class="section">
 									<div class="stat-report">
 										<div class="stat-report-head">
-											<h1 class="stat-report-heading">Donasi</h1>
+											<h1 class="stat-report-heading">Permohonan</h1>
 											<div class="stat-report-filter">
 												<select id="input-stat-filter" class="input">
 													<option>2018</option>
@@ -41,15 +41,15 @@
 										</div>
 										<div class="stat-report-charts">
 											<div class="stat-report-chart">
-												<h2 class="title">Total Donasi</h2>
+												<h2 class="title">Total Permohonan</h2>
 												<div class="chart">
-													<canvas id="chart-donation-total" class="js-chart" data-chart-type="bar" width="400" height="200"></canvas>
+													<canvas id="chart-request-total" class="js-chart" data-chart-type="bar" width="400" height="200"></canvas>
 												</div>
 											</div>
 											<div class="stat-report-chart">
-												<h2 class="title">Donasi Berdasarkan Jenis</h2>
+												<h2 class="title">Permohonan Berdasarkan Jenis</h2>
 												<div class="chart">
-													<canvas id="chart-donation-type" class="js-chart" width="400" height="200"></canvas>
+													<canvas id="chart-request-type" class="js-chart" width="400" height="200"></canvas>
 												</div>
 											</div>
 										</div>
@@ -57,7 +57,7 @@
 											<table class="table table-compact">
 												<thead>
 													<tr>
-														<th class="th is-sortable is-active is-asc">Donasi</th>
+														<th class="th is-sortable is-active is-asc">Permohanan</th>
 														<th class="th right is-sortable">JAN</th>
 														<th class="th right is-sortable">FEB</th>
 														<th class="th right is-sortable">MAR</th>

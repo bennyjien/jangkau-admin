@@ -9,7 +9,7 @@
 						<div class="admin-page-container">
 							<header class="admin-page-header">
 								<div class="page-breadcrumb">
-									<p class="breadcrumb"><span class="parent">Statistik</span> / <span class="current">Permohonan Relawan</span></p>
+									<p class="breadcrumb"><span class="parent">Statistik</span> / <span class="current">Relawan</span></p>
 								</div>
 								<div class="avatar-nav">
 									<div class="avatar-nav-link">
@@ -29,35 +29,40 @@
 							</header>
 							<div class="admin-page-content">
 								<section class="section">
-									<div class="stat-table">
-										<div class="stat-table-head">
-											<h1 class="stat-table-heading">Permohonan Relawan</h1>
-											<div class="stat-table-filter">
+									<div class="stat-report">
+										<div class="stat-report-head">
+											<h1 class="stat-report-heading">Relawan</h1>
+											<div class="stat-report-filter">
 												<select id="input-stat-filter" class="input">
 													<option>2018</option>
 													<option selected>2019</option>
 												</select>
 											</div>
 										</div>
-										<div class="stat-table-charts">
-											<div class="stat-table-chart">
-												<h2 class="title">Total Donasi</h2>
-												<div class="chart">
-													<canvas id="chart-donation-total" class="js-chart" data-chart-type="bar" width="400" height="200"></canvas>
+										<div class="stat-report-cards">
+											<div class="stat-report-card">
+												<div class="meta">
+													<p class="row label">Total Relawan</p>
+													<p class="row date">Dec 2018 – Aug 2019</p>
+													<p class="row value">168</p>
 												</div>
 											</div>
-											<div class="stat-table-chart">
-												<h2 class="title">Donasi Berdasarkan Jenis</h2>
-												<div class="chart">
-													<canvas id="chart-donation-type" class="js-chart" width="400" height="200"></canvas>
+											<div class="stat-report-card">
+												<div class="meta">
+													<p class="row label">Pendaftaran Relawan</p>
+													<p class="row date">Jan 2019 – Aug 2019</p>
+													<p class="row value">160</p>
+												</div>
+												<div class="summary summary-positive">
+													<p class="row"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-trending-up" /></svg> 2.000% <span class="value">(160)</span> from 2018</p>
 												</div>
 											</div>
 										</div>
-										<div class="stat-table-body table-responsive">
+										<div class="stat-report-body table-responsive">
 											<table class="table table-compact">
 												<thead>
 													<tr>
-														<th class="th is-sortable is-active is-asc">Jumlah Permohonan</th>
+														<th class="th is-sortable is-active is-asc">Pendaftaran</th>
 														<th class="th right is-sortable">JAN</th>
 														<th class="th right is-sortable">FEB</th>
 														<th class="th right is-sortable">MAR</th>
@@ -94,33 +99,33 @@
 														<th>Ditolak</th>
 														<td class="right">-</td>
 														<td class="right">1</td>
-														<td class="right">7</td>
-														<td class="right">9</td>
+														<td class="right">1</td>
+														<td class="right">3</td>
+														<td class="right">1</td>
+														<td class="right">0</td>
+														<td class="right">1</td>
+														<td class="right">5</td>
+														<td class="right">-</td>
+														<td class="right">-</td>
+														<td class="right">-</td>
+														<td class="right">-</td>
 														<td class="right">12</td>
-														<td class="right">11</td>
-														<td class="right">19</td>
-														<td class="right">20</td>
-														<td class="right">-</td>
-														<td class="right">-</td>
-														<td class="right">-</td>
-														<td class="right">-</td>
-														<td class="right">79</td>
 													</tr>
-													<tr>
+													<tr class="total">
 														<th>Total</th>
 														<td class="right">-</td>
 														<td class="right">2</td>
-														<td class="right">7</td>
-														<td class="right">9</td>
+														<td class="right">8</td>
 														<td class="right">12</td>
+														<td class="right">13</td>
 														<td class="right">11</td>
-														<td class="right">19</td>
 														<td class="right">20</td>
+														<td class="right">25</td>
 														<td class="right">-</td>
 														<td class="right">-</td>
 														<td class="right">-</td>
 														<td class="right">-</td>
-														<td class="right">79</td>
+														<td class="right">91</td>
 													</tr>
 												</tbody>
 											</table>
