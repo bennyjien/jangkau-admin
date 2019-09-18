@@ -49,6 +49,7 @@
 }
 
 .admin-table {
+	@include font-size-400;
 
 	@at-root {
 		.admin-table-head {
@@ -59,16 +60,53 @@
 
 		.admin-table-action {
 			flex: 1 1 0;
-		}
-
-		.admin-table-filter {
-			flex: 0 1 auto;
 			margin-right: 16px;
 		}
 
 		.admin-table-search {
 			flex: 0 1 40%;
 			margin-left: auto;
+			max-width: 288px;
+		}
+
+		.admin-table-addon {
+			margin-left: 8px;
+
+			.button {
+
+				&.is-toggling,
+				&.is-toggled {
+					background-color: $color-one-500;
+				}
+			}
+		}
+
+		.admin-table-filters {
+			background-color: $color-200;
+			border-radius: 4px;
+			display: none;
+			margin-bottom: 24px;
+			margin-top: -16px;
+			padding: 0 4px;
+
+			&.is-toggling,
+			&.is-toggled {
+				display: flex !important;
+			}
+		}
+
+		.admin-table-filter {
+			flex: 1 1 50%;
+			margin: 8px 4px;
+
+			&.admin-table-filter-submit {
+				max-width: 160px;
+			}
+
+			.input,
+			.button {
+				width: 100%;
+			}
 		}
 
 		.admin-table-quickfilter {

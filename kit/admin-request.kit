@@ -35,21 +35,33 @@
 											<div class="admin-table-action">
 												<a href="#" class="button button-green"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-plus" /></svg> Add New</a>
 											</div>
-											<div class="admin-table-filter">
-												<div class="search-bar">
-													<select name="status" id="status" class="input">
-														<option selected>Semua Status</option>
-														<option>Menunggu verifikasi</option>
-														<option>Proses verifikasi</option>
-													</select>
-													<button class="button button-gray">Cari</button>
-												</div>
-											</div>
 											<div class="admin-table-search">
 												<div class="search-bar">
 													<input type="text" class="input" placeholder="ID, Nama">
-													<button class="button button-gray">Cari</button>
+													<button class="button button-gray"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-search" /></svg> Cari</button>
 												</div>
+											</div>
+											<div class="admin-table-addon">
+												<a href="#admin-table-filters" class="button button-gray js-toggle" data-toggle-area="body"><svg class="icon icon-inline" role="img"><use xlink:href="assets/images/svg-symbols.svg#icon-filter" /></svg> Filter</a>
+											</div>
+										</div>
+										<div id="admin-table-filters" class="admin-table-filters">
+											<div class="admin-table-filter">
+												<select name="status" id="status" class="input">
+													<option selected>Semua Status</option>
+													<option>Menunggu verifikasi</option>
+													<option>Proses verifikasi</option>
+												</select>
+											</div>
+											<div class="admin-table-filter">
+												<select name="status" id="status" class="input">
+													<option selected>Semua Status</option>
+													<option>Menunggu verifikasi</option>
+													<option>Proses verifikasi</option>
+												</select>
+											</div>
+											<div class="admin-table-filter admin-table-filter-submit">
+												<button class="button button-dark">Filter</button>
 											</div>
 										</div>
 										<div class="admin-table-body">

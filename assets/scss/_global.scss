@@ -63,13 +63,41 @@
 		}
 	}
 
-	&.button-gray {
-		background-color: $color-border;
-		color: $color-text-light;
+	&.button-alt {
+		background-color: $color-warning-500;
+		color: $color-text-dark;
 
 		&:hover,
 		&:focus {
-			background-color: $color-text-light;
+			background-color: $color-warning-600;
+			color: $color-text-dark;
+		}
+
+		&:active {
+			background-color: $color-warning-500;
+		}
+	}
+
+	&.button-dark {
+		background-color: $color-text;
+
+		&:hover,
+		&:focus {
+			background-color: $color-text-dark;
+		}
+
+		&:active {
+			background-color: $color-text;
+		}
+	}
+
+	&.button-gray {
+		background-color: $color-500;
+		color: $white;
+
+		&:hover,
+		&:focus {
+			background-color: $color-600;
 			color: $white;
 		}
 

@@ -297,7 +297,7 @@ textarea {
 	box-shadow: none;
 	line-height: inherit;
 	max-width: 100%;
-	padding: 8px;
+	padding: 7px 8px;
 	transition: all 0.2s ease-out;
 	vertical-align: middle;
 
@@ -328,7 +328,7 @@ select {
 	background-position: 100% center;
 	background-position: calc(100% - 4px) center;
 	background-repeat: no-repeat;
-	padding: 8px 24px 8px 8px;
+	padding: 7px 24px 7px 8px;
 
 	&[multiple],
 	&[size] {

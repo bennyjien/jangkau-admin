@@ -16,10 +16,10 @@
 	.input {
 		border-top-right-radius: 0;
 		border-bottom-right-radius: 0;
+		border-color: $color-border-dark;
 		flex: 1 1 0;
 
 		&:focus {
-
 
 			+ .button {
 				background-color: $color-one-500;
@@ -31,5 +31,6 @@
 	.button {
 		border-top-left-radius: 0;
 		border-bottom-left-radius: 0;
+		margin-left: -1px;
 	}
 }
