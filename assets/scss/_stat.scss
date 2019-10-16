@@ -7,16 +7,55 @@
 		}
 
 		.stat-report-heading {
+			flex: 1 1 auto;
 			font-weight: 300;
 			margin-bottom: 0;
+			margin-right: 16px;
 		}
 
 		.stat-report-filter {
-			flex: 0 1 25%;
-			margin-left: auto;
-			padding-left: 32px;
+			flex: 0 1 auto;
+			padding-left: 8px;
 
 			.input {
+				min-width: 128px;
+				width: 100%;
+			}
+
+			.button {
+
+				&.is-toggling,
+				&.is-toggled {
+					background-color: $color-one-500;
+				}
+			}
+		}
+
+		.stat-report-advfilters {
+			@include font-size-400;
+			background-color: $color-200;
+			border-radius: 4px;
+			display: none;
+			margin-bottom: 24px;
+			margin-top: -16px;
+			padding: 0 4px;
+
+			&.is-toggling,
+			&.is-toggled {
+				display: flex !important;
+			}
+		}
+
+		.stat-report-advfilter {
+			flex: 1 1 50%;
+			margin: 8px 4px;
+
+			&.admin-table-filter-submit {
+				max-width: 160px;
+			}
+
+			.input,
+			.button {
 				width: 100%;
 			}
 		}
